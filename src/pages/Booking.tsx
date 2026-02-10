@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-nice-port-v2.jpg";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Booking = () => {
+  const { t } = useLanguage();
+
   return (
     <>
       <Header />
@@ -22,7 +25,7 @@ const Booking = () => {
               transition={{ duration: 0.8 }}
               className="text-4xl md:text-6xl font-serif text-primary-foreground mb-4"
             >
-              Réserver
+              {t('booking.title')}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
@@ -41,12 +44,8 @@ const Booking = () => {
             <div className="bg-muted rounded-2xl p-8 min-h-[600px] flex items-center justify-center text-center">
               <div className="space-y-4">
                 <p className="text-muted-foreground text-lg">
-                  Le moteur de réservation sera intégré ici en iframe.
+                  {t('booking.loading')}
                 </p>
-                <p className="text-muted-foreground/60 text-sm">
-                  Remplacez ce bloc par votre iframe de réservation externe.
-                </p>
-                {/* Example: <iframe src="YOUR_BOOKING_ENGINE_URL" className="w-full min-h-[600px] border-0 rounded-xl" /> */}
               </div>
             </div>
           </div>

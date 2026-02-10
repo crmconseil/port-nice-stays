@@ -53,7 +53,7 @@ const Header = () => {
                 : "text-primary-foreground hover:bg-primary-foreground/10"
             }`}
           >
-            <a href="mailto:contact@lequailunel.fr">
+            <a href="mailto:niceportduplex@gmail.com">
               <Mail className="w-4 h-4 mr-2" />
               {t('nav.contact')}
             </a>

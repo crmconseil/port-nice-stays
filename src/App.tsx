@@ -9,12 +9,14 @@ import NotFound from "./pages/NotFound";
 import PromenadeDesAnglais from "./pages/PromenadeDesAnglais";
 import CoursSaleya from "./pages/CoursSaleya";
 import VieuxNice from "./pages/VieuxNice";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
+    <LanguageProvider>
+      <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
@@ -27,7 +29,8 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </TooltipProvider>
+      </TooltipProvider>
+    </LanguageProvider>
   </QueryClientProvider>
 );
 

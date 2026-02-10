@@ -97,6 +97,8 @@ export const translations = {
       title: "Réservez votre séjour",
       subtitle: "Meilleurs tarifs garantis en direct",
       loading: "Chargement du formulaire de réservation...",
+      other_properties: "Voir nos autres biens",
+      monaco_title: "Appartement Monaco",
     },
     location: {
       subtitle: "Localisation",
@@ -260,6 +262,8 @@ export const translations = {
       title: "Book Your Stay",
       subtitle: "Best rates guaranteed direct",
       loading: "Loading booking form...",
+      other_properties: "See our other properties",
+      monaco_title: "Monaco Apartment",
     },
     location: {
       subtitle: "Location",

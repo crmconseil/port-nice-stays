@@ -1,11 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NeighborhoodCrossLinks from "@/components/NeighborhoodCrossLinks";
-import { motion } from "framer-motion";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import { ArrowLeft, Church, Palette, IceCream, Building } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
-import heroImg from "@/assets/vieux-nice.jpg";
+import img1 from "@/assets/vieuxnice-ruelle.jpg";
+import img2 from "@/assets/vieuxnice-colline-chateau.jpg";
+import img3 from "@/assets/vieuxnice-cathedrale.jpg";
 
 const icons = [Church, Building, Palette, IceCream];
 const highlightKeys = ['heritage', 'architecture', 'crafts', 'icecream'] as const;
@@ -13,24 +15,16 @@ const highlightKeys = ['heritage', 'architecture', 'crafts', 'icecream'] as cons
 const VieuxNice = () => {
   const { t } = useLanguage();
 
+  const heroImages = [
+    { src: img1, alt: "Ruelle du Vieux Nice" },
+    { src: img2, alt: "Colline du Château" },
+    { src: img3, alt: "Cathédrale Sainte-Réparate" },
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
-        <img src={heroImg} alt="Vieux Nice" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative text-center px-4">
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-            className="text-white/80 uppercase tracking-[0.2em] text-sm mb-3">
-            {t('pages.vieuxnice.distance')}
-          </motion.p>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-serif text-white">
-            {t('pages.vieuxnice.title')}
-          </motion.h1>
-        </div>
-      </section>
+      <HeroSlideshow images={heroImages} title={t('pages.vieuxnice.title')} subtitle={t('pages.vieuxnice.distance')} />
 
       <section className="section-padding">
         <div className="container-narrow">

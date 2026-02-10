@@ -1,11 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NeighborhoodCrossLinks from "@/components/NeighborhoodCrossLinks";
-import { motion } from "framer-motion";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import { ArrowLeft, Sun, Bike, Camera, Waves } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
-import heroImg from "@/assets/promenade-des-anglais.jpg";
+import img1 from "@/assets/promenade-seafront.jpg";
+import img2 from "@/assets/promenade-roba-capeu.jpg";
+import img3 from "@/assets/promenade-negresco.jpg";
 
 const icons = [Sun, Bike, Camera, Waves];
 const highlightKeys = ['relax', 'sport', 'views', 'swim'] as const;
@@ -13,24 +15,16 @@ const highlightKeys = ['relax', 'sport', 'views', 'swim'] as const;
 const PromenadeDesAnglais = () => {
   const { t } = useLanguage();
 
+  const heroImages = [
+    { src: img1, alt: "Promenade des Anglais - Front de mer" },
+    { src: img2, alt: "Rauba Capeu - Vue côtière" },
+    { src: img3, alt: "Hôtel Negresco" },
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
-      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
-        <img src={heroImg} alt="Promenade des Anglais" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative text-center px-4">
-          <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-            className="text-white/80 uppercase tracking-[0.2em] text-sm mb-3">
-            {t('pages.promenade.distance')}
-          </motion.p>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-serif text-white">
-            {t('pages.promenade.title')}
-          </motion.h1>
-        </div>
-      </section>
+      <HeroSlideshow images={heroImages} title={t('pages.promenade.title')} subtitle={t('pages.promenade.distance')} />
 
       <section className="section-padding">
         <div className="container-narrow">

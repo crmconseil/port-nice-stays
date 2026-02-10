@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import promenadeImg from "@/assets/promenade-des-anglais.jpg";
-import saleyaImg from "@/assets/cours-saleya.jpg";
-import vieuxNiceImg from "@/assets/vieux-nice.jpg";
+import promenadeImg from "@/assets/promenade-seafront.jpg";
+import saleyaImg from "@/assets/saleya-fleurs.jpg";
+import vieuxNiceImg from "@/assets/vieuxnice-ruelle.jpg";
 
 const allPlaces = [
   { key: "promenade", path: "/promenade-des-anglais", img: promenadeImg, titleKey: "pages.promenade.title", distanceKey: "pages.promenade.distance" },

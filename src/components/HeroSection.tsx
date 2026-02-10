@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-nice-port-v2.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <div 
@@ -17,7 +20,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="text-primary-foreground/90 uppercase tracking-[0.3em] text-sm mb-6 font-sans"
         >
-          Port de Nice • Côte d'Azur
+          {t('hero.subtitle')}
         </motion.p>
         
         <motion.h1
@@ -26,7 +29,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-serif text-primary-foreground mb-6 leading-tight"
         >
-          Nice Port Duplex
+          {t('hero.title')}
         </motion.h1>
         
         <motion.p
@@ -35,7 +38,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-xl md:text-2xl text-primary-foreground/90 font-light mb-10 font-serif italic"
         >
-          Un appartement idéalement situé sur le port historique
+          {t('hero.description')}
         </motion.p>
       </div>
       

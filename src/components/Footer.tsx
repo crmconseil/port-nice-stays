@@ -1,5 +1,6 @@
 import { MapPin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -8,6 +9,8 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-foreground text-primary-foreground py-12">
       <div className="container-narrow px-4">
@@ -15,13 +18,12 @@ const Footer = () => {
           <div>
             <h3 className="font-serif text-2xl mb-4">Nice Port Duplex</h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Un duplex élégant sur le port de Nice, 
-              alliant charme historique et confort moderne.
+              {t('hero.description')}
             </p>
           </div>
           
           <div>
-            <h4 className="font-medium mb-4">Contact</h4>
+            <h4 className="font-medium mb-4">{t('footer.contact')}</h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-2 text-primary-foreground/70">
                 <MapPin className="w-4 h-4" />
@@ -43,26 +45,26 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-medium mb-4">Liens rapides</h4>
+            <h4 className="font-medium mb-4">{t('nav.home')}</h4>
             <div className="space-y-2 text-sm">
               <Link to="/" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                Accueil
+                {t('nav.home')}
               </Link>
               <Link to="/reserver" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                Réserver
+                {t('nav.book')}
               </Link>
               <a href="/#gallery" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                Galerie photos
+                {t('nav.gallery')}
               </a>
               <a href="/#location" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                Localisation
+                {t('nav.location')}
               </a>
             </div>
           </div>
         </div>
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/50">
-          <p>© {new Date().getFullYear()} Nice Port Duplex. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Nice Port Duplex. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>

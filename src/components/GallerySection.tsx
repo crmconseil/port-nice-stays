@@ -20,6 +20,10 @@ import bedroom1_5 from "@/assets/bedroom1-5.jpg";
 import bedroom1_6 from "@/assets/bedroom1-6.jpg";
 import bedroom1_7 from "@/assets/bedroom1-7.jpg";
 import bedroom1_8 from "@/assets/bedroom1-8.jpg";
+import bedroom2_1 from "@/assets/bedroom2-1.jpg";
+import bedroom2_2 from "@/assets/bedroom2-2.jpg";
+import bedroom2_3 from "@/assets/bedroom2-3.jpg";
+import bedroom2_4 from "@/assets/bedroom2-4.jpg";
 
 const KeyBoxIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -53,7 +57,7 @@ const rooms = [
     ],
   },
   {
-    title: "Chambre Matrimoniale",
+    title: "Chambre Matrimoniale et salle de bain",
     images: [
       { src: bedroom1_1, alt: "Mezzanine et vue d'ensemble" },
       { src: bedroom1_2, alt: "Chambre avec lit double" },
@@ -66,13 +70,16 @@ const rooms = [
     ],
   },
   {
-    title: "Chambre 2",
+    title: "Chambre simple et salle de bain",
     images: [
-      { src: bedroom1_2, alt: "Chambre 2" },
+      { src: bedroom2_2, alt: "Chambre simple - Vue lit 1" },
+      { src: bedroom2_3, alt: "Chambre simple - Vue lit 2" },
+      { src: bedroom2_1, alt: "Salle de bain" },
+      { src: bedroom2_4, alt: "Mezzanine" },
     ],
   },
   {
-    title: "Chambre 3",
+    title: "Chambre/Bureau",
     images: [
       { src: bedroom1_1, alt: "Chambre 3" },
     ],

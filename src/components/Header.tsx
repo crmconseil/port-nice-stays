@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Mail } from "lucide-react";
+import { Mail, Globe } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -27,7 +29,20 @@ const Header = () => {
         }`}>
           Nice Port Duplex
         </Link>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 md:gap-3">
+          {/* Language Selector */}
+          <button
+            onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
+            className={`flex items-center gap-1 text-xs font-medium px-2 py-1 rounded-full transition-colors ${
+              scrolled
+                ? "text-foreground hover:bg-muted"
+                : "text-primary-foreground hover:bg-primary-foreground/10"
+            }`}
+          >
+            <Globe className="w-3.5 h-3.5" />
+            <span>{language === 'fr' ? 'EN' : 'FR'}</span>
+          </button>
+
           <Button
             variant="ghost"
             size="sm"
@@ -40,7 +55,7 @@ const Header = () => {
           >
             <a href="mailto:contact@lequailunel.fr">
               <Mail className="w-4 h-4 mr-2" />
-              Contact
+              {t('nav.contact')}
             </a>
           </Button>
           <Button
@@ -48,7 +63,7 @@ const Header = () => {
             asChild
             className="bg-gradient-gold text-gold-foreground hover:opacity-90 transition-opacity"
           >
-            <Link to="/reserver">Réserver</Link>
+            <Link to="/reserver">{t('nav.book')}</Link>
           </Button>
         </div>
       </div>

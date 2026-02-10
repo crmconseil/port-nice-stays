@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Palmtree, Building2, ShoppingBag, Utensils } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const areas = [
   {
@@ -7,18 +8,21 @@ const areas = [
     title: "Promenade des Anglais",
     distance: "10 min à pied",
     description: "La célèbre promenade longeant la baie des Anges, idéale pour les balades en bord de mer.",
+    link: "/promenade-des-anglais",
   },
   {
     icon: Building2,
     title: "Vieux Nice",
     distance: "2 min à pied",
     description: "Ruelles pittoresques, marchés provençaux et architecture baroque du XVIIe siècle.",
+    link: "/vieux-nice",
   },
   {
     icon: ShoppingBag,
     title: "Cours Saleya",
     distance: "3 min à pied",
     description: "Le marché aux fleurs emblématique de Nice, terrasses de cafés et ambiance animée.",
+    link: "/cours-saleya",
   },
   {
     icon: Utensils,
@@ -51,15 +55,8 @@ const NeighborhoodSection = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {areas.map((area, index) => (
-            <motion.div
-              key={area.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-card rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border"
-            >
+          {areas.map((area, index) => {
+            const Content = (
               <div className="flex gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <area.icon className="w-6 h-6 text-primary" />
@@ -74,8 +71,31 @@ const NeighborhoodSection = () => {
                   </p>
                 </div>
               </div>
-            </motion.div>
-          ))}
+            );
+
+            return (
+              <motion.div
+                key={area.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                {area.link ? (
+                  <Link
+                    to={area.link}
+                    className="block bg-card rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border"
+                  >
+                    {Content}
+                  </Link>
+                ) : (
+                  <div className="bg-card rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
+                    {Content}
+                  </div>
+                )}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

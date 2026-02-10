@@ -3,21 +3,44 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X, Maximize2, BedDouble, Bath, Users, Ruler } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import livingRoom from "@/assets/apartment-living.jpg";
-import bedroom from "@/assets/apartment-bedroom.jpg";
-import kitchen from "@/assets/apartment-kitchen.jpg";
+import apartment1 from "@/assets/apartment-1.jpg";
+import apartment2 from "@/assets/apartment-2.jpg";
+import apartment3 from "@/assets/apartment-3.jpg";
+import apartment4 from "@/assets/apartment-4.jpg";
+import apartment5 from "@/assets/apartment-5.jpg";
+import apartment6 from "@/assets/apartment-6.jpg";
+import apartment7 from "@/assets/apartment-7.jpg";
+import apartment8 from "@/assets/apartment-8.jpg";
+import apartment9 from "@/assets/apartment-9.jpg";
+import apartment10 from "@/assets/apartment-10.jpg";
 
 const images = [
-  { src: livingRoom, alt: "Salon lumineux", title: "Salon" },
-  { src: bedroom, alt: "Chambre élégante", title: "Chambre" },
-  { src: kitchen, alt: "Cuisine équipée", title: "Cuisine" },
+  { src: apartment1, alt: "Salon et salle à manger" },
+  { src: apartment2, alt: "Cuisine équipée" },
+  { src: apartment3, alt: "Équipement petit-déjeuner" },
+  { src: apartment4, alt: "Machine à café" },
+  { src: apartment5, alt: "Lave-linge" },
+  { src: apartment6, alt: "Vue ensemble" },
+  { src: apartment7, alt: "Salon" },
+  { src: apartment8, alt: "Cuisine" },
+  { src: apartment9, alt: "Coin repas" },
+  { src: apartment10, alt: "Salle à manger" },
 ];
+
+const KeyBoxIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+    <circle cx="12" cy="16" r="1"/>
+    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+  </svg>
+);
 
 const stats = [
   { icon: Ruler, label: "54 m²", description: "Surface" },
   { icon: BedDouble, label: "3 chambres", description: "Couchages" },
   { icon: Bath, label: "2 salles de bain", description: "Équipées" },
   { icon: Users, label: "6 couchages", description: "Maximum" },
+  { icon: KeyBoxIcon, label: "Check-in autonome", description: "Boîte à clés" },
 ];
 
 const GallerySection = () => {
@@ -100,7 +123,7 @@ const GallerySection = () => {
 
         {/* Stats bar */}
         <div className="bg-secondary rounded-xl py-6 px-4 mb-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {stats.map((stat) => (
               <div key={stat.label} className="flex flex-col items-center text-center">
                 <stat.icon className="w-7 h-7 text-primary mb-2" />

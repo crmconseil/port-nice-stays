@@ -1,4 +1,5 @@
 import { MapPin, Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -6,10 +7,10 @@ const Footer = () => {
       <div className="container-narrow px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-serif text-2xl mb-4">Le Quai Lunel</h3>
+            <h3 className="font-serif text-2xl mb-4">Nice Port Duplex</h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Un appartement d'exception sur le port de Nice, 
-              alliant charme méditerranéen et confort moderne.
+              Un duplex élégant sur le port de Nice, 
+              alliant charme historique et confort moderne.
             </p>
           </div>
           
@@ -38,16 +39,16 @@ const Footer = () => {
           <div>
             <h4 className="font-medium mb-4">Liens rapides</h4>
             <div className="space-y-2 text-sm">
-              <a href="#gallery" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <Link to="/" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                Accueil
+              </Link>
+              <Link to="/reserver" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                Réserver
+              </Link>
+              <a href="/#gallery" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 Galerie photos
               </a>
-              <a href="#calendar" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                Disponibilités
-              </a>
-              <a href="#booking" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                Réserver
-              </a>
-              <a href="#location" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <a href="/#location" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 Localisation
               </a>
             </div>
@@ -55,7 +56,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/50">
-          <p>© {new Date().getFullYear()} Le Quai Lunel. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Nice Port Duplex. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

@@ -2,23 +2,23 @@ import { motion } from "framer-motion";
 import { 
   Wifi, 
   Car, 
-  Waves, 
+  TreePalm, 
   Coffee, 
-  Tv, 
   AirVent,
   UtensilsCrossed,
-  WashingMachine
+  WashingMachine,
+  Bath
 } from "lucide-react";
 
 const amenities = [
+  { icon: Car, label: "Parking Lympia", description: "En face · payant" },
+  { icon: TreePalm, label: "Vue cour", description: "Calme" },
+  { icon: Coffee, label: "Café / Thé", description: "Inclus" },
   { icon: Wifi, label: "WiFi Fibre", description: "Haut débit" },
-  { icon: Car, label: "Parking", description: "Place privée" },
-  { icon: Waves, label: "Vue Port", description: "Panoramique" },
-  { icon: Coffee, label: "Nespresso", description: "Café inclus" },
-  { icon: Tv, label: "Smart TV", description: "Netflix inclus" },
   { icon: AirVent, label: "Climatisation", description: "Réversible" },
   { icon: UtensilsCrossed, label: "Cuisine équipée", description: "Premium" },
   { icon: WashingMachine, label: "Lave-linge", description: "Séchant" },
+  { icon: Bath, label: "Draps et Serviettes", description: "Fournis" },
 ];
 
 const AmenitiesSection = () => {

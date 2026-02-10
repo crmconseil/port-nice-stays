@@ -1,24 +1,15 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-nice-port.jpg";
+import heroImage from "@/assets/hero-nice-port-v2.jpg";
 
 const HeroSection = () => {
-  const scrollToBooking = () => {
-    document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
-      
-      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-hero" />
       
-      {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -35,7 +26,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-serif text-primary-foreground mb-6 leading-tight"
         >
-          Le Quai Lunel
+          Nice Port Duplex
         </motion.h1>
         
         <motion.p
@@ -44,34 +35,10 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-xl md:text-2xl text-primary-foreground/90 font-light mb-10 font-serif italic"
         >
-          Un appartement d'exception face au port historique
+          Un appartement idéalement situé sur le port historique
         </motion.p>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-        >
-          <Button
-            size="lg"
-            onClick={scrollToBooking}
-            className="bg-gradient-gold text-gold-foreground hover:opacity-90 transition-opacity text-lg px-8 py-6 font-sans"
-          >
-            Réserver maintenant
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}
-            className="border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6 font-sans"
-          >
-            Découvrir
-          </Button>
-        </motion.div>
       </div>
       
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

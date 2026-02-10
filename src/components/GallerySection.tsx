@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, X, BedDouble, Bath, Users, Ruler } from "lucide-react";
+import { ChevronLeft, ChevronRight, X, BedDouble, Bath, Users, Ruler, WashingMachine, Utensils, Armchair, Refrigerator } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import apartmentLiving from "@/assets/apartment-living.jpg";
@@ -50,15 +50,13 @@ const rooms = [
   {
     title: "Salon / Cuisine",
     images: [
-      { src: apartmentLiving, alt: "Salon" },
-      { src: living2, alt: "Salon vue 2" },
-      { src: apartmentKitchen, alt: "Cuisine" },
-      { src: kitchen2, alt: "Cuisine équipée" },
-      { src: kitchen3, alt: "Lave-linge" },
-      { src: kitchen4, alt: "Vue d'ensemble" },
-      { src: kitchen5, alt: "Plan de travail" },
-      { src: dining1, alt: "Coin repas" },
-      { src: dining2, alt: "Salle à manger" },
+      { src: living2, alt: "Coin salon avec canapé" },
+      { src: dining1, alt: "Table à manger" },
+      { src: dining2, alt: "Espace repas" },
+      { src: kitchen2, alt: "Cuisine équipée vue d'ensemble" },
+      { src: kitchen4, alt: "Cuisine moderne" },
+      { src: kitchen5, alt: "Plan de travail et équipements" },
+      { src: kitchen3, alt: "Lave-linge intégré" },
     ],
   },
   {
@@ -214,6 +212,19 @@ const GallerySection = () => {
           <h2 className="text-4xl md:text-5xl font-serif text-foreground">Découvrez l'appartement</h2>
         </motion.div>
 
+        {/* Stats bar */}
+        <div className="bg-secondary rounded-xl py-6 px-4 mb-10">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {stats.map((stat) => (
+              <div key={stat.label} className="flex flex-col items-center text-center">
+                <stat.icon className="w-7 h-7 text-primary mb-2" />
+                <p className="font-serif text-lg font-semibold text-foreground">{stat.label}</p>
+                <p className="text-xs text-muted-foreground">{stat.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Room Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
           {rooms.map((room) => (
@@ -228,19 +239,6 @@ const GallerySection = () => {
               <MiniSlideshow images={room.images} title={room.title} />
             </motion.div>
           ))}
-        </div>
-
-        {/* Stats bar */}
-        <div className="bg-secondary rounded-xl py-6 px-4 mb-10">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            {stats.map((stat) => (
-              <div key={stat.label} className="flex flex-col items-center text-center">
-                <stat.icon className="w-7 h-7 text-primary mb-2" />
-                <p className="font-serif text-lg font-semibold text-foreground">{stat.label}</p>
-                <p className="text-xs text-muted-foreground">{stat.description}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Description */}

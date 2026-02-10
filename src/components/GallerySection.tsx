@@ -24,6 +24,11 @@ import bedroom2_1 from "@/assets/bedroom2-1.jpg";
 import bedroom2_2 from "@/assets/bedroom2-2.jpg";
 import bedroom2_3 from "@/assets/bedroom2-3.jpg";
 import bedroom2_4 from "@/assets/bedroom2-4.jpg";
+import bedroom3_1 from "@/assets/bedroom3-1.jpg";
+import bedroom3_2 from "@/assets/bedroom3-2.jpg";
+import bedroom3_3 from "@/assets/bedroom3-3.jpg";
+import bedroom3_4 from "@/assets/bedroom3-4.jpg";
+import bedroom3_5 from "@/assets/bedroom3-5.jpg";
 
 const KeyBoxIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -81,7 +86,11 @@ const rooms = [
   {
     title: "Chambre/Bureau",
     images: [
-      { src: bedroom1_1, alt: "Chambre 3" },
+      { src: bedroom3_1, alt: "Chambre Bureau - Vue d'ensemble" },
+      { src: bedroom3_2, alt: "Chambre Bureau - Vue lit" },
+      { src: bedroom3_4, alt: "Espace bureau" },
+      { src: bedroom3_3, alt: "Mezzanine et escaliers" },
+      { src: bedroom3_5, alt: "Radio vintage" },
     ],
   },
 ];

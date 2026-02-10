@@ -12,9 +12,14 @@ import kitchen5 from "@/assets/kitchen-5.jpg";
 import living2 from "@/assets/living-2.jpg";
 import dining1 from "@/assets/dining-1.jpg";
 import dining2 from "@/assets/dining-2.jpg";
-import apartment1 from "@/assets/apartment-1.jpg";
-import apartment2 from "@/assets/apartment-2.jpg";
-import apartment3 from "@/assets/apartment-3.jpg";
+import bedroom1_1 from "@/assets/bedroom1-1.jpg";
+import bedroom1_2 from "@/assets/bedroom1-2.jpg";
+import bedroom1_3 from "@/assets/bedroom1-3.jpg";
+import bedroom1_4 from "@/assets/bedroom1-4.jpg";
+import bedroom1_5 from "@/assets/bedroom1-5.jpg";
+import bedroom1_6 from "@/assets/bedroom1-6.jpg";
+import bedroom1_7 from "@/assets/bedroom1-7.jpg";
+import bedroom1_8 from "@/assets/bedroom1-8.jpg";
 
 const KeyBoxIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -48,22 +53,28 @@ const rooms = [
     ],
   },
   {
-    title: "Chambre 1",
+    title: "Chambre Matrimoniale",
     images: [
-      { src: apartment1, alt: "Chambre 1" },
-      { src: apartment2, alt: "Chambre 1 vue 2" },
+      { src: bedroom1_1, alt: "Mezzanine et vue d'ensemble" },
+      { src: bedroom1_2, alt: "Chambre avec lit double" },
+      { src: bedroom1_3, alt: "Chambre vue de face" },
+      { src: bedroom1_4, alt: "Salle de bain avec douche" },
+      { src: bedroom1_5, alt: "Toilettes" },
+      { src: bedroom1_6, alt: "Salle de bain vue 2" },
+      { src: bedroom1_7, alt: "Chambre vue panoramique" },
+      { src: bedroom1_8, alt: "Chambre détail" },
     ],
   },
   {
     title: "Chambre 2",
     images: [
-      { src: apartment3, alt: "Chambre 2" },
+      { src: bedroom1_2, alt: "Chambre 2" },
     ],
   },
   {
     title: "Chambre 3",
     images: [
-      { src: apartment1, alt: "Chambre 3" },
+      { src: bedroom1_1, alt: "Chambre 3" },
     ],
   },
 ];

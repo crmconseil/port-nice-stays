@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X, BedDouble, Bath, Users, Ruler } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 import living2 from "@/assets/living-2.jpg";
@@ -164,13 +165,13 @@ const GallerySection = () => {
   return (
     <section id="gallery" className="section-padding bg-background">
       <div className="container-narrow">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="text-center mb-12">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="text-center mb-8">
           <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3 font-sans">{t('gallery.subtitle')}</p>
           <h2 className="text-4xl md:text-5xl font-serif text-foreground">{t('gallery.title')}</h2>
         </motion.div>
 
         {/* Stats bar */}
-        <div className="bg-secondary rounded-xl py-6 px-4 mb-10">
+        <div className="bg-secondary rounded-xl py-6 px-4 mb-8">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {stats.map((stat) => (
               <div key={stat.description} className="flex flex-col items-center text-center">
@@ -182,8 +183,17 @@ const GallerySection = () => {
           </div>
         </div>
 
+        {/* Short description above photos */}
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4 mb-8">
+          <p>{t('gallery.description.p1')}</p>
+          <p>{t('gallery.description.p2')}</p>
+          <p>{t('gallery.description.p3')}</p>
+          <p>{t('gallery.description.p4')}</p>
+          <p>{t('gallery.description.p5')}</p>
+        </motion.div>
+
         {/* Room Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {rooms.map((room) => (
             <motion.div key={room.key} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
               <h3 className="text-xl font-serif text-foreground mb-4 text-center">{t(`gallery.rooms.${room.key}`)}</h3>
@@ -192,14 +202,34 @@ const GallerySection = () => {
           ))}
         </div>
 
-        {/* Description */}
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
-          <p>{t('gallery.description.p1')}</p>
-          <p>{t('gallery.description.p2')}</p>
-          <p>{t('gallery.description.p3')}</p>
-          <p>{t('gallery.description.p4')}</p>
-          <p>{t('gallery.description.p5')}</p>
+        {/* Detailed Description below photos */}
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4 mb-10">
+          <p className="font-semibold text-foreground">{t('gallery.detailed.intro')}</p>
+          <p>{t('gallery.detailed.upstairs')}</p>
+          <p>{t('gallery.detailed.downstairs')}</p>
+          <p className="font-semibold text-foreground">{t('gallery.detailed.beds_title')}</p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>{t('gallery.detailed.bed1')}</li>
+            <li>{t('gallery.detailed.bed2')}</li>
+            <li>{t('gallery.detailed.bed3')}</li>
+          </ul>
+          <p>{t('gallery.detailed.kitchen')}</p>
+          <p>{t('gallery.detailed.dining')}</p>
+          <p>{t('gallery.detailed.courtyard')}</p>
+          <p>{t('gallery.detailed.amenities')}</p>
+          <p>{t('gallery.detailed.parking')}</p>
+          <p>{t('gallery.detailed.linen')}</p>
+          <p>{t('gallery.detailed.checkin')}</p>
         </motion.div>
+
+        {/* Book button */}
+        <div className="text-center">
+          <Link to="/booking">
+            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-12 py-6 rounded-full font-sans font-semibold shadow-lg">
+              {t('nav.book')}
+            </Button>
+          </Link>
+        </div>
       </div>
     </section>
   );

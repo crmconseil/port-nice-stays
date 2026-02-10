@@ -46,7 +46,8 @@ const Booking = () => {
           <div className="container-narrow">
             <iframe
               src="https://app.superhote.com/#/rental/propertyKeyCKNhN3wsLfZ8GxC3w8tGqDk2U?startDate=&endDate=&adultsNumber=1&childrenNumber=0&lang=fr"
-              className="w-full min-h-[700px] rounded-2xl border-0"
+              className="w-full rounded-2xl border-0"
+              style={{ height: '2200px' }}
               title={t('booking.title')}
               allow="payment"
             />

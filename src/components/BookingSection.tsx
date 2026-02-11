@@ -2,11 +2,20 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { format, differenceInDays } from "date-fns";
 import { fr } from "date-fns/locale";
+import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Calendar, Users, CreditCard, Sparkles, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+
+const bookingSchema = z.object({
+  firstName: z.string().trim().min(1, "Prénom requis").max(100),
+  lastName: z.string().trim().min(1, "Nom requis").max(100),
+  email: z.string().trim().email("Email invalide").max(255),
+  phone: z.string().trim().regex(/^\+?[1-9]\d{1,14}$/, "Numéro invalide"),
+  guests: z.number().min(1).max(4),
+});
 
 interface BookingSectionProps {
   checkIn: Date | null;
@@ -45,10 +54,12 @@ const BookingSection = ({
       return;
     }
 
-    if (!firstName || !lastName || !email || !phone) {
+    const result = bookingSchema.safeParse({ firstName, lastName, email, phone, guests });
+    if (!result.success) {
+      const firstError = result.error.errors[0];
       toast({
-        title: "Informations incomplètes",
-        description: "Veuillez remplir tous les champs obligatoires.",
+        title: "Informations invalides",
+        description: firstError.message,
         variant: "destructive",
       });
       return;

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-nice-port-v2.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
@@ -7,11 +6,8 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   const { t } = useLanguage();
 
-  const scrollDown = () => {
-    const nextSection = document.getElementById("gallery");
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: "smooth" });
-    }
+  const scrollToBooking = () => {
+    document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -55,11 +51,9 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <Link to="/booking">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-10 py-6 rounded-full font-sans font-semibold shadow-lg">
-              {t('nav.book')}
-            </Button>
-          </Link>
+          <Button size="lg" onClick={scrollToBooking} className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-10 py-6 rounded-full font-sans font-semibold shadow-lg">
+            {t('nav.book')}
+          </Button>
         </motion.div>
       </div>
       
@@ -68,7 +62,7 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.6 }}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 cursor-pointer"
-        onClick={scrollDown}
+        onClick={scrollToBooking}
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}

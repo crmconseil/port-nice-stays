@@ -185,11 +185,11 @@ const GallerySection = () => {
       </div>
 
       {/* Booking iframe - full width */}
-      <div className="w-full mt-10">
+      <div id="booking" className="w-full mt-10">
         <iframe
           src="https://app.superhote.com/#/rental/propertyKeyCKNhN3wsLfZ8GxC3w8tGqDk2U?startDate=&endDate=&adultsNumber=1&childrenNumber=0&lang=fr"
           className="w-full border-0"
-          style={{ height: '4000px' }}
+          style={{ height: '5200px' }}
           title={t('nav.book')}
           allow="payment"
         />

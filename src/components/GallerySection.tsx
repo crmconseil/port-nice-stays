@@ -236,7 +236,7 @@ const GallerySection = () => {
           key={iframeLang}
           src={`https://app.superhote.com/#/rental/propertyKeyCKNhN3wsLfZ8GxC3w8tGqDk2U?startDate=&endDate=&adultsNumber=1&childrenNumber=0&lang=${iframeLang}`}
           className="w-full border-0"
-          style={{ height: '4500px', overflow: 'hidden' }}
+          style={{ height: '4400px', overflow: 'hidden' }}
           scrolling="no"
           title={t('nav.book')}
           allow="payment"

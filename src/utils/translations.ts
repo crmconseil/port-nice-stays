@@ -201,6 +201,10 @@ export const translations = {
           q: "Comment accède-t-on à l'appartement depuis les transports ?",
           a: "Notre immeuble est situé sur le port de plaisance de Nice. Le port est accessible par tram, bus, voiture et bateau.\n\n• Depuis l'aéroport de Nice : Tram ligne 2 direct jusqu'à son terminus « Port Lympia »\n\n• Depuis la gare centrale de Nice Ville : Tram ligne 1 jusqu'à la fameuse place Garibaldi, puis marcher 5 min en direction du port.\n\n• En bus depuis Monaco et Menton, ligne 600 vous dépose sur le port.\n\n• En bateau, des navettes depuis Monaco, Cannes, Saint-Tropez vous déposent sur l'embarcadère juste devant notre immeuble. C'est également d'ici que partent les ferries pour la Corse si vous voulez prolonger votre séjour en France avec un petit tour sur l'Île de Beauté.",
         },
+        cancellation: {
+          q: "Quelle est la politique d'annulation ?",
+          a: "Remboursement à 100 % pour toute annulation au moins 15 jours avant l'arrivée.\n\n50 % de remboursement pour toute annulation jusqu'à 1 semaine avant l'arrivée.\n\nAucun remboursement pour toute annulation de dernière minute.",
+        },
       },
     },
     legal: {
@@ -432,6 +436,10 @@ export const translations = {
         transport: {
           q: "How do you get to the apartment by public transport?",
           a: "Our building is located on the Nice marina. The port is accessible by tram, bus, car, and boat.\n\n• From Nice Airport: Direct tram line 2 to its terminus 'Port Lympia'\n\n• From Nice Ville central station: Tram line 1 to the famous Place Garibaldi, then walk 5 minutes towards the port.\n\n• By bus from Monaco and Menton, line 600 drops you off at the port.\n\n• By boat, shuttles from Monaco, Cannes, Saint-Tropez drop you off at the pier right in front of our building. This is also where ferries to Corsica depart if you want to extend your stay in France with a trip to the Island of Beauty.",
+        },
+        cancellation: {
+          q: "What is the cancellation policy?",
+          a: "100% refund for any cancellation at least 15 days before arrival.\n\n50% refund for any cancellation up to 1 week before arrival.\n\nNo refund for last-minute cancellations.",
         },
       },
     },
@@ -665,6 +673,10 @@ export const translations = {
           q: "Come si arriva all'appartamento con i trasporti?",
           a: "Il nostro edificio si trova sul porto turistico di Nizza. Il porto è raggiungibile in tram, autobus, auto e barca.\n\n• Dall'aeroporto di Nizza: Tram linea 2 diretto fino al capolinea 'Port Lympia'\n\n• Dalla stazione centrale di Nice Ville: Tram linea 1 fino alla famosa Place Garibaldi, poi camminare 5 minuti verso il porto.\n\n• In autobus da Monaco e Mentone, la linea 600 vi lascia al porto.\n\n• In barca, le navette da Monaco, Cannes, Saint-Tropez vi lasciano all'imbarcadero proprio davanti al nostro edificio. Da qui partono anche i traghetti per la Corsica se volete prolungare il vostro soggiorno in Francia con un giro sull'Isola della Bellezza.",
         },
+        cancellation: {
+          q: "Qual è la politica di cancellazione?",
+          a: "Rimborso al 100% per qualsiasi cancellazione almeno 15 giorni prima dell'arrivo.\n\n50% di rimborso per qualsiasi cancellazione fino a 1 settimana prima dell'arrivo.\n\nNessun rimborso per cancellazioni dell'ultimo minuto.",
+        },
       },
     },
     legal: {
@@ -897,6 +909,10 @@ export const translations = {
           q: "¿Cómo se llega al apartamento en transporte público?",
           a: "Nuestro edificio está situado en el puerto deportivo de Niza. El puerto es accesible en tranvía, autobús, coche y barco.\n\n• Desde el aeropuerto de Niza: Tranvía línea 2 directo hasta su terminal 'Port Lympia'\n\n• Desde la estación central de Nice Ville: Tranvía línea 1 hasta la famosa Place Garibaldi, luego caminar 5 minutos hacia el puerto.\n\n• En autobús desde Mónaco y Mentón, la línea 600 le deja en el puerto.\n\n• En barco, las lanzaderas desde Mónaco, Cannes, Saint-Tropez le dejan en el embarcadero justo delante de nuestro edificio. También es desde aquí donde salen los ferries a Córcega si desea prolongar su estancia en Francia con un paseo por la Isla de la Belleza.",
         },
+        cancellation: {
+          q: "¿Cuál es la política de cancelación?",
+          a: "Reembolso del 100% para cualquier cancelación al menos 15 días antes de la llegada.\n\n50% de reembolso para cualquier cancelación hasta 1 semana antes de la llegada.\n\nSin reembolso para cancelaciones de última hora.",
+        },
       },
     },
     legal: {
@@ -1128,6 +1144,10 @@ export const translations = {
         transport: {
           q: "Como se chega ao apartamento por transportes públicos?",
           a: "O nosso edifício situa-se na marina de Nice. O porto é acessível por elétrico, autocarro, carro e barco.\n\n• Desde o aeroporto de Nice: Elétrico linha 2 direto até ao seu terminal 'Port Lympia'\n\n• Desde a estação central de Nice Ville: Elétrico linha 1 até à famosa Place Garibaldi, depois caminhar 5 minutos em direção ao porto.\n\n• De autocarro desde Mónaco e Menton, a linha 600 deixa-o no porto.\n\n• De barco, as lanchas desde Mónaco, Cannes, Saint-Tropez deixam-no no cais mesmo em frente ao nosso edifício. É também daqui que partem os ferries para a Córsega se quiser prolongar a sua estadia em França com um passeio pela Ilha da Beleza.",
+        },
+        cancellation: {
+          q: "Qual é a política de cancelamento?",
+          a: "Reembolso de 100% para qualquer cancelamento pelo menos 15 dias antes da chegada.\n\n50% de reembolso para qualquer cancelamento até 1 semana antes da chegada.\n\nSem reembolso para cancelamentos de última hora.",
         },
       },
     },

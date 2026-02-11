@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       subtitle: "Port de Nice • Côte d'Azur",
       title: "Nice Port Duplex",
-      description: "Un appartement idéalement situé sur le port historique",
+      description: "Location meublée touristique — Duplex idéalement situé sur le port historique de Nice",
     },
     gallery: {
       subtitle: "Galerie",
@@ -43,8 +43,10 @@ export const translations = {
       },
       detailed: {
         intro: "L'appartement de 54 m² situé au 2ᵉ étage sur 3, est composé de :",
-        upstairs: "À l'étage, les espaces nuit avec 2 chambres et 2 salles de bain (douche, lavabo, toilettes et bidet), garantissant intimité et confort.\nLa chambre principale dispose d'un lit double, tandis que la seconde chambre est équipée d'un lit simple.",
-        downstairs: "Au niveau inférieur, lumineux et convivial, un salon / salle à manger chaleureux avec une cuisine ouverte entièrement équipée, ainsi qu'une 3ᵉ chambre pouvant faire office de bureau.\nCette pièce dispose d'un canapé-lit, tout comme le salon. Les deux canapés-lits (140 cm) permettent d'accueillir des invités supplémentaires selon vos besoins.",
+        upstairs_bold: "À l'étage, les espaces nuit",
+        upstairs_rest: "avec 2 chambres et 2 salles de bain (douche, lavabo, toilettes et bidet), garantissant intimité et confort.\nLa chambre principale dispose d'un lit double, tandis que la seconde chambre est équipée d'un lit simple.",
+        downstairs_bold: "Au niveau inférieur, lumineux et convivial, un salon / salle à manger",
+        downstairs_rest: "chaleureux avec une cuisine ouverte entièrement équipée, ainsi qu'une 3ᵉ chambre pouvant faire office de bureau.\nCette pièce dispose d'un canapé-lit, tout comme le salon. Les deux canapés-lits (140 cm) permettent d'accueillir des invités supplémentaires selon vos besoins.",
         beds_title: "Couchages :",
         bed1: "1 lit double",
         bed2: "1 lit simple",
@@ -55,8 +57,10 @@ export const translations = {
         amenities: "Vous profiterez de la climatisation, d'un ascenseur, d'une connexion Wi-Fi fibre haut débit, de la télévision par câble et d'un système audio Bluetooth.",
         parking: "Aucun souci pour stationner : un parking de la ville sécurisé (payant à l'accueil du parking) est situé juste en face de l'immeuble. Des places de stationnement dans les rues arrière sont également parfois disponibles (payantes en journée, gratuites la nuit et le dimanche).",
         linen: "Le linge de lit, les serviettes de toilette ainsi que les produits d'hygiène sont fournis.",
-        checkin: "L'entrée et le départ sont autonomes grâce à un système de boîte à clé connectée.\nLe code d'accès est envoyé automatiquement le jour de votre arrivée, et les instructions d'arrivée la veille.",
-        deposit: "Une caution de 500 € est demandée avant l'arrivée (pré-autorisée uniquement, non encaissée).",
+        checkin_bold: "L'entrée et le départ sont autonomes",
+        checkin_rest: "grâce à un système de boîte à clé connectée.\nLe code d'accès est envoyé automatiquement le jour de votre arrivée, et les instructions d'arrivée la veille.",
+        deposit_bold: "Une caution de 500 € est demandée avant l'arrivée",
+        deposit_rest: "(pré-autorisée uniquement, non encaissée).",
       }
     },
     amenities: {
@@ -209,7 +213,7 @@ export const translations = {
     hero: {
       subtitle: "Nice Port • French Riviera",
       title: "Nice Port Duplex",
-      description: "Ideally located on the historic port",
+      description: "Furnished tourist rental — Duplex ideally located on the historic port of Nice",
     },
     gallery: {
       subtitle: "Gallery",
@@ -240,8 +244,10 @@ export const translations = {
       },
       detailed: {
         intro: "The 54 m² apartment, located on the 2nd floor of 3, consists of:",
-        upstairs: "Upstairs, the sleeping areas feature 2 bedrooms and 2 bathrooms (shower, sink, toilet, and bidet), ensuring privacy and comfort.\nThe master bedroom has a double bed, while the second bedroom is equipped with a single bed.",
-        downstairs: "On the lower level, bright and welcoming, a cozy living/dining room with a fully equipped open kitchen, plus a 3rd bedroom that can serve as an office.\nThis room has a sofa bed, as does the living room. Both sofa beds (140 cm) can accommodate additional guests as needed.",
+        upstairs_bold: "Upstairs, the sleeping areas",
+        upstairs_rest: "feature 2 bedrooms and 2 bathrooms (shower, sink, toilet, and bidet), ensuring privacy and comfort.\nThe master bedroom has a double bed, while the second bedroom is equipped with a single bed.",
+        downstairs_bold: "On the lower level, bright and welcoming, a cozy living/dining room",
+        downstairs_rest: "with a fully equipped open kitchen, plus a 3rd bedroom that can serve as an office.\nThis room has a sofa bed, as does the living room. Both sofa beds (140 cm) can accommodate additional guests as needed.",
         beds_title: "Sleeping arrangements:",
         bed1: "1 double bed",
         bed2: "1 single bed",
@@ -252,8 +258,10 @@ export const translations = {
         amenities: "You'll enjoy air conditioning, an elevator, high-speed fiber Wi-Fi, cable television, and a Bluetooth audio system.",
         parking: "No worries about parking: a secure city parking lot (paid at the parking reception) is located right across from the building. Street parking in the back streets is also sometimes available (paid during the day, free at night and on Sundays).",
         linen: "Bed linen, bath towels, and toiletries are provided.",
-        checkin: "Check-in and check-out are self-service via a connected key box.\nThe access code is sent automatically on the day of your arrival, and arrival instructions the day before.",
-        deposit: "A €500 security deposit is required before arrival (pre-authorized only, not charged).",
+        checkin_bold: "Check-in and check-out are self-service",
+        checkin_rest: "via a connected key box.\nThe access code is sent automatically on the day of your arrival, and arrival instructions the day before.",
+        deposit_bold: "A €500 security deposit is required before arrival",
+        deposit_rest: "(pre-authorized only, not charged).",
       }
     },
     amenities: {
@@ -406,7 +414,7 @@ export const translations = {
     hero: {
       subtitle: "Porto di Nizza • Costa Azzurra",
       title: "Nice Port Duplex",
-      description: "Un appartamento idealmente situato sul porto storico",
+      description: "Affitto turistico ammobiliato — Duplex idealmente situato sul porto storico di Nizza",
     },
     gallery: {
       subtitle: "Galleria",
@@ -437,8 +445,10 @@ export const translations = {
       },
       detailed: {
         intro: "L'appartamento di 54 m², situato al 2° piano su 3, è composto da:",
-        upstairs: "Al piano superiore, le zone notte con 2 camere da letto e 2 bagni (doccia, lavabo, WC e bidet), garantendo privacy e comfort.\nLa camera principale dispone di un letto matrimoniale, mentre la seconda camera è dotata di un letto singolo.",
-        downstairs: "Al livello inferiore, luminoso e accogliente, un soggiorno/sala da pranzo con cucina a vista completamente attrezzata, più una 3ª camera che può fungere da ufficio.\nQuesta stanza dispone di un divano letto, così come il soggiorno. Entrambi i divani letto (140 cm) possono ospitare ospiti aggiuntivi secondo le vostre esigenze.",
+        upstairs_bold: "Al piano superiore, le zone notte",
+        upstairs_rest: "con 2 camere da letto e 2 bagni (doccia, lavabo, WC e bidet), garantendo privacy e comfort.\nLa camera principale dispone di un letto matrimoniale, mentre la seconda camera è dotata di un letto singolo.",
+        downstairs_bold: "Al livello inferiore, luminoso e accogliente, un soggiorno/sala da pranzo",
+        downstairs_rest: "con cucina a vista completamente attrezzata, più una 3ª camera che può fungere da ufficio.\nQuesta stanza dispone di un divano letto, così come il soggiorno. Entrambi i divani letto (140 cm) possono ospitare ospiti aggiuntivi secondo le vostre esigenze.",
         beds_title: "Posti letto:",
         bed1: "1 letto matrimoniale",
         bed2: "1 letto singolo",
@@ -449,8 +459,10 @@ export const translations = {
         amenities: "Potrete usufruire di aria condizionata, ascensore, Wi-Fi in fibra ad alta velocità, televisione via cavo e un sistema audio Bluetooth.",
         parking: "Nessun problema per parcheggiare: un parcheggio comunale sicuro (a pagamento alla reception del parcheggio) si trova proprio di fronte all'edificio. Parcheggi nelle strade laterali sono talvolta disponibili (a pagamento di giorno, gratuiti di notte e la domenica).",
         linen: "Biancheria da letto, asciugamani e prodotti per l'igiene sono forniti.",
-        checkin: "Il check-in e il check-out sono autonomi tramite una cassetta chiavi connessa.\nIl codice di accesso viene inviato automaticamente il giorno del vostro arrivo, e le istruzioni di arrivo il giorno prima.",
-        deposit: "Un deposito cauzionale di 500 € è richiesto prima dell'arrivo (solo pre-autorizzazione, non addebitato).",
+        checkin_bold: "Il check-in e il check-out sono autonomi",
+        checkin_rest: "tramite una cassetta chiavi connessa.\nIl codice di accesso viene inviato automaticamente il giorno del vostro arrivo, e le istruzioni di arrivo il giorno prima.",
+        deposit_bold: "Un deposito cauzionale di 500 € è richiesto prima dell'arrivo",
+        deposit_rest: "(solo pre-autorizzazione, non addebitato).",
       }
     },
     amenities: {
@@ -603,7 +615,7 @@ export const translations = {
     hero: {
       subtitle: "Puerto de Niza • Costa Azul",
       title: "Nice Port Duplex",
-      description: "Un apartamento idealmente situado en el puerto histórico",
+      description: "Alquiler turístico amueblado — Dúplex idealmente situado en el puerto histórico de Niza",
     },
     gallery: {
       subtitle: "Galería",
@@ -634,8 +646,10 @@ export const translations = {
       },
       detailed: {
         intro: "El apartamento de 54 m², situado en la 2ª planta de 3, se compone de:",
-        upstairs: "En la planta superior, las zonas de noche con 2 dormitorios y 2 baños (ducha, lavabo, WC y bidé), garantizando intimidad y confort.\nEl dormitorio principal dispone de una cama doble, mientras que el segundo dormitorio está equipado con una cama individual.",
-        downstairs: "En el nivel inferior, luminoso y acogedor, un salón/comedor con cocina abierta totalmente equipada, más un 3er dormitorio que puede servir como oficina.\nEsta habitación tiene un sofá cama, al igual que el salón. Los dos sofás cama (140 cm) permiten alojar huéspedes adicionales según sus necesidades.",
+        upstairs_bold: "En la planta superior, las zonas de noche",
+        upstairs_rest: "con 2 dormitorios y 2 baños (ducha, lavabo, WC y bidé), garantizando intimidad y confort.\nEl dormitorio principal dispone de una cama doble, mientras que el segundo dormitorio está equipado con una cama individual.",
+        downstairs_bold: "En el nivel inferior, luminoso y acogedor, un salón/comedor",
+        downstairs_rest: "con cocina abierta totalmente equipada, más un 3er dormitorio que puede servir como oficina.\nEsta habitación tiene un sofá cama, al igual que el salón. Los dos sofás cama (140 cm) permiten alojar huéspedes adicionales según sus necesidades.",
         beds_title: "Plazas:",
         bed1: "1 cama doble",
         bed2: "1 cama individual",
@@ -646,8 +660,10 @@ export const translations = {
         amenities: "Disfrutará de aire acondicionado, ascensor, Wi-Fi de fibra de alta velocidad, televisión por cable y un sistema de audio Bluetooth.",
         parking: "Sin problema para aparcar: un aparcamiento municipal seguro (de pago en la recepción) se encuentra justo enfrente del edificio. Plazas de aparcamiento en las calles traseras también están disponibles ocasionalmente (de pago durante el día, gratuito por la noche y los domingos).",
         linen: "La ropa de cama, las toallas y los productos de higiene están incluidos.",
-        checkin: "La entrada y la salida son autónomas gracias a un sistema de caja de llaves conectada.\nEl código de acceso se envía automáticamente el día de su llegada, y las instrucciones de llegada el día anterior.",
-        deposit: "Se requiere un depósito de 500 € antes de la llegada (solo pre-autorización, no cobrado).",
+        checkin_bold: "La entrada y la salida son autónomas",
+        checkin_rest: "gracias a un sistema de caja de llaves conectada.\nEl código de acceso se envía automáticamente el día de su llegada, y las instrucciones de llegada el día anterior.",
+        deposit_bold: "Se requiere un depósito de 500 € antes de la llegada",
+        deposit_rest: "(solo pre-autorización, no cobrado).",
       }
     },
     amenities: {
@@ -800,7 +816,7 @@ export const translations = {
     hero: {
       subtitle: "Porto de Nice • Côte d'Azur",
       title: "Nice Port Duplex",
-      description: "Um apartamento idealmente situado no porto histórico",
+      description: "Alojamento turístico mobilado — Duplex idealmente situado no porto histórico de Nice",
     },
     gallery: {
       subtitle: "Galeria",
@@ -831,8 +847,10 @@ export const translations = {
       },
       detailed: {
         intro: "O apartamento de 54 m², situado no 2.º andar de 3, é composto por:",
-        upstairs: "No andar de cima, as zonas de dormir com 2 quartos e 2 casas de banho (duche, lavatório, sanita e bidé), garantindo privacidade e conforto.\nO quarto principal dispõe de uma cama de casal, enquanto o segundo quarto está equipado com uma cama individual.",
-        downstairs: "No nível inferior, luminoso e acolhedor, uma sala/sala de jantar com cozinha aberta totalmente equipada, mais um 3º quarto que pode funcionar como escritório.\nEste quarto tem um sofá-cama, assim como a sala. Os dois sofás-cama (140 cm) permitem acolher hóspedes adicionais conforme as suas necessidades.",
+        upstairs_bold: "No andar de cima, as zonas de dormir",
+        upstairs_rest: "com 2 quartos e 2 casas de banho (duche, lavatório, sanita e bidé), garantindo privacidade e conforto.\nO quarto principal dispõe de uma cama de casal, enquanto o segundo quarto está equipado com uma cama individual.",
+        downstairs_bold: "No nível inferior, luminoso e acolhedor, uma sala/sala de jantar",
+        downstairs_rest: "com cozinha aberta totalmente equipada, mais um 3º quarto que pode funcionar como escritório.\nEste quarto tem um sofá-cama, assim como a sala. Os dois sofás-cama (140 cm) permitem acolher hóspedes adicionais conforme as suas necessidades.",
         beds_title: "Dormidas:",
         bed1: "1 cama de casal",
         bed2: "1 cama individual",
@@ -843,8 +861,10 @@ export const translations = {
         amenities: "Desfrutará de ar condicionado, elevador, Wi-Fi fibra de alta velocidade, televisão por cabo e um sistema de áudio Bluetooth.",
         parking: "Sem problema para estacionar: um parque de estacionamento municipal seguro (pago na receção) situa-se mesmo em frente ao edifício. Lugares de estacionamento nas ruas traseiras também estão ocasionalmente disponíveis (pagos durante o dia, gratuitos à noite e aos domingos).",
         linen: "Roupa de cama, toalhas de banho e produtos de higiene são fornecidos.",
-        checkin: "A entrada e saída são autónomas graças a um sistema de caixa de chaves conectada.\nO código de acesso é enviado automaticamente no dia da sua chegada, e as instruções de chegada na véspera.",
-        deposit: "Um depósito de 500 € é solicitado antes da chegada (apenas pré-autorização, não cobrado).",
+        checkin_bold: "A entrada e saída são autónomas",
+        checkin_rest: "graças a um sistema de caixa de chaves conectada.\nO código de acesso é enviado automaticamente no dia da sua chegada, e as instruções de chegada na véspera.",
+        deposit_bold: "Um depósito de 500 € é solicitado antes da chegada",
+        deposit_rest: "(apenas pré-autorização, não cobrado).",
       }
     },
     amenities: {

@@ -73,5 +73,16 @@
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://niceportduplex.com/mentions-legales" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://niceportduplex.com/mentions-legales" />
   </url>
+  <url>
+    <loc>https://niceportduplex.com/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://niceportduplex.com/faq" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://niceportduplex.com/faq" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://niceportduplex.com/faq" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://niceportduplex.com/faq" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://niceportduplex.com/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://niceportduplex.com/faq" />
+  </url>
 
 </urlset>

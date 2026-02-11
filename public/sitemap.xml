@@ -1,33 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://niceportduplex.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://niceportduplex.com/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://niceportduplex.com/" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://niceportduplex.com/" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://niceportduplex.com/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://niceportduplex.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://niceportduplex.com/" />
   </url>
+
   <url>
     <loc>https://niceportduplex.com/promenade-des-anglais</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://niceportduplex.com/promenade-des-anglais" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://niceportduplex.com/promenade-des-anglais" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://niceportduplex.com/promenade-des-anglais" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://niceportduplex.com/promenade-des-anglais" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://niceportduplex.com/promenade-des-anglais" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://niceportduplex.com/promenade-des-anglais" />
   </url>
+
   <url>
     <loc>https://niceportduplex.com/cours-saleya</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://niceportduplex.com/cours-saleya" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://niceportduplex.com/cours-saleya" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://niceportduplex.com/cours-saleya" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://niceportduplex.com/cours-saleya" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://niceportduplex.com/cours-saleya" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://niceportduplex.com/cours-saleya" />
   </url>
+
   <url>
     <loc>https://niceportduplex.com/vieux-nice</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://niceportduplex.com/vieux-nice" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://niceportduplex.com/vieux-nice" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://niceportduplex.com/vieux-nice" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://niceportduplex.com/vieux-nice" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://niceportduplex.com/vieux-nice" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://niceportduplex.com/vieux-nice" />
   </url>
+
   <url>
     <loc>https://niceportduplex.com/restaurants-bars</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://niceportduplex.com/restaurants-bars" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://niceportduplex.com/restaurants-bars" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://niceportduplex.com/restaurants-bars" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://niceportduplex.com/restaurants-bars" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://niceportduplex.com/restaurants-bars" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://niceportduplex.com/restaurants-bars" />
   </url>
+
   <url>
     <loc>https://niceportduplex.com/mentions-legales</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://niceportduplex.com/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://niceportduplex.com/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://niceportduplex.com/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://niceportduplex.com/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://niceportduplex.com/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://niceportduplex.com/mentions-legales" />
   </url>
+
 </urlset>

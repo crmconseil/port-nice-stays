@@ -35,11 +35,11 @@ export const translations = {
         checkin_label: "Check-in autonome",
       },
       description: {
-        p1: "Bienvenue dans ce duplex élégant sur deux niveaux, idéalement situé sur le port de Nice, au cœur d'un immeuble résidentiel du XVIIIe siècle. Un lieu qui marie charme historique et confort moderne, parfait pour un séjour raffiné sur la Côte d'Azur.",
+        p1: "Bienvenue dans ce duplex élégant sur deux niveaux, idéalement situé sur le port de Nice, au cœur d'un immeuble résidentiel du XVIIIᵉ siècle. Un lieu qui marie charme historique et confort moderne, parfait pour un séjour de vacances raffiné sur la Côte d'Azur.",
         p2: "Grâce à un accès aisé depuis l'aéroport via le tram ligne 2 direct, depuis la gare centrale, et à la proximité des bateaux et bus vers les villes limitrophes, vous pourrez profiter très facilement de Nice, Cannes, Monaco, Menton et de tous les villages typiques alentours en transports en commun.",
-        p3: "L'appartement est situé directement sur le Port de plaisance de Nice, face aux embarcadères pour la Corse, Cannes, Saint-Tropez et les Îles de Lérins.",
+        p3: "L'immeuble est situé directement sur le Port de plaisance de Nice, face aux embarcadères pour la Corse, Cannes, Saint-Tropez et les Îles de Lérins.",
         p4: "À seulement 5 minutes à pied de la plage, des transports, des restaurants et du centre historique.",
-        p5: "Idéal pour 2 couples ou un couple avec 3 enfants, il peut accueillir jusqu'à 6 personnes.",
+        p5: "Idéal pour 2 couples ou un couple avec 2 ou 3 enfants, ou encore 2 professionnels, il peut cependant accueillir jusqu'à 6 personnes.",
       },
       detailed: {
         intro: "L'appartement de 54 m² est composé de :",
@@ -231,11 +231,11 @@ export const translations = {
         checkin_label: "Self check-in",
       },
       description: {
-        p1: "Welcome to this elegant duplex on two levels, ideally located on the port of Nice, in the heart of an 18th-century residential building. A place that blends historic charm with modern comfort, perfect for a refined stay on the French Riviera.",
+        p1: "Welcome to this elegant two-level duplex, ideally located on the port of Nice, in the heart of an 18th-century residential building. A place that blends historic charm with modern comfort, perfect for a refined holiday stay on the French Riviera.",
         p2: "With easy access from the airport via the direct tram line 2, from the central station, and proximity to boats and buses to neighboring cities, you can easily enjoy Nice, Cannes, Monaco, Menton, and all the typical surrounding villages by public transport.",
-        p3: "The apartment is located directly on the Nice Marina, facing the piers for Corsica, Cannes, Saint-Tropez, and the Lérins Islands.",
+        p3: "The building is located directly on the Nice Marina, facing the piers for Corsica, Cannes, Saint-Tropez, and the Lérins Islands.",
         p4: "Only 5 minutes walk from the beach, transport, restaurants, and the historic center.",
-        p5: "Ideal for 2 couples or a couple with 3 children, it can accommodate up to 6 people.",
+        p5: "Ideal for 2 couples or a couple with 2 or 3 children, or even 2 professionals, it can however accommodate up to 6 people.",
       },
       detailed: {
         intro: "The 54 m² apartment consists of:",
@@ -427,11 +427,11 @@ export const translations = {
         checkin_label: "Check-in autonomo",
       },
       description: {
-        p1: "Benvenuti in questo elegante duplex su due livelli, idealmente situato sul porto di Nizza, nel cuore di un edificio residenziale del XVIII secolo. Un luogo che unisce fascino storico e comfort moderno, perfetto per un soggiorno raffinato in Costa Azzurra.",
+        p1: "Benvenuti in questo elegante duplex su due livelli, idealmente situato sul porto di Nizza, nel cuore di un edificio residenziale del XVIII secolo. Un luogo che unisce fascino storico e comfort moderno, perfetto per un soggiorno di vacanza raffinato in Costa Azzurra.",
         p2: "Grazie al facile accesso dall'aeroporto tramite il tram diretto linea 2, dalla stazione centrale, e alla vicinanza di traghetti e autobus verso le città limitrofe, potrete facilmente esplorare Nizza, Cannes, Monaco, Mentone e tutti i tipici villaggi circostanti con i mezzi pubblici.",
-        p3: "L'appartamento si trova direttamente sul Porto turistico di Nizza, di fronte agli imbarchi per la Corsica, Cannes, Saint-Tropez e le Isole di Lérins.",
+        p3: "L'edificio si trova direttamente sul Porto turistico di Nizza, di fronte agli imbarchi per la Corsica, Cannes, Saint-Tropez e le Isole di Lérins.",
         p4: "A soli 5 minuti a piedi dalla spiaggia, dai trasporti, dai ristoranti e dal centro storico.",
-        p5: "Ideale per 2 coppie o una coppia con 3 bambini, può ospitare fino a 6 persone.",
+        p5: "Ideale per 2 coppie o una coppia con 2 o 3 bambini, o anche 2 professionisti, può comunque ospitare fino a 6 persone.",
       },
       detailed: {
         intro: "L'appartamento di 54 m² è composto da:",
@@ -623,11 +623,11 @@ export const translations = {
         checkin_label: "Check-in autónomo",
       },
       description: {
-        p1: "Bienvenido a este elegante dúplex de dos niveles, idealmente situado en el puerto de Niza, en el corazón de un edificio residencial del siglo XVIII. Un lugar que combina encanto histórico y confort moderno, perfecto para una estancia refinada en la Costa Azul.",
+        p1: "Bienvenido a este elegante dúplex de dos niveles, idealmente situado en el puerto de Niza, en el corazón de un edificio residencial del siglo XVIII. Un lugar que combina encanto histórico y confort moderno, perfecto para una estancia de vacaciones refinada en la Costa Azul.",
         p2: "Gracias al fácil acceso desde el aeropuerto por el tranvía directo línea 2, desde la estación central, y la cercanía de barcos y autobuses hacia las ciudades vecinas, podrá disfrutar fácilmente de Niza, Cannes, Mónaco, Mentón y todos los pueblos típicos de los alrededores en transporte público.",
-        p3: "El apartamento está situado directamente en el Puerto deportivo de Niza, frente a los embarcaderos hacia Córcega, Cannes, Saint-Tropez y las Islas de Lérins.",
+        p3: "El edificio está situado directamente en el Puerto deportivo de Niza, frente a los embarcaderos hacia Córcega, Cannes, Saint-Tropez y las Islas de Lérins.",
         p4: "A solo 5 minutos a pie de la playa, del transporte, de los restaurantes y del centro histórico.",
-        p5: "Ideal para 2 parejas o una pareja con 3 niños, puede alojar hasta 6 personas.",
+        p5: "Ideal para 2 parejas o una pareja con 2 o 3 niños, o incluso 2 profesionales, puede sin embargo alojar hasta 6 personas.",
       },
       detailed: {
         intro: "El apartamento de 54 m² se compone de:",
@@ -819,11 +819,11 @@ export const translations = {
         checkin_label: "Check-in autónomo",
       },
       description: {
-        p1: "Bem-vindo a este elegante duplex em dois níveis, idealmente situado no porto de Nice, no coração de um edifício residencial do século XVIII. Um lugar que combina charme histórico e conforto moderno, perfeito para uma estadia refinada na Côte d'Azur.",
+        p1: "Bem-vindo a este elegante duplex em dois níveis, idealmente situado no porto de Nice, no coração de um edifício residencial do século XVIII. Um lugar que combina charme histórico e conforto moderno, perfeito para uma estadia de férias refinada na Côte d'Azur.",
         p2: "Graças ao fácil acesso desde o aeroporto pelo elétrico direto linha 2, desde a estação central, e à proximidade de barcos e autocarros para as cidades vizinhas, poderá explorar facilmente Nice, Cannes, Mónaco, Menton e todas as aldeias típicas dos arredores por transportes públicos.",
-        p3: "O apartamento situa-se diretamente na Marina de Nice, em frente aos cais para a Córsega, Cannes, Saint-Tropez e as Ilhas de Lérins.",
+        p3: "O edifício situa-se diretamente na Marina de Nice, em frente aos cais para a Córsega, Cannes, Saint-Tropez e as Ilhas de Lérins.",
         p4: "A apenas 5 minutos a pé da praia, dos transportes, dos restaurantes e do centro histórico.",
-        p5: "Ideal para 2 casais ou um casal com 3 crianças, pode acolher até 6 pessoas.",
+        p5: "Ideal para 2 casais ou um casal com 2 ou 3 crianças, ou ainda 2 profissionais, pode contudo acolher até 6 pessoas.",
       },
       detailed: {
         intro: "O apartamento de 54 m² é composto por:",

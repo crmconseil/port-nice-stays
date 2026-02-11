@@ -182,6 +182,21 @@ const GallerySection = () => {
           </div>
         </div>
 
+        {/* Welcome description */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mt-8 space-y-4 text-muted-foreground text-sm md:text-base leading-relaxed max-w-3xl mx-auto text-center"
+        >
+          <p>{t('gallery.description.p1')}</p>
+          <p>{t('gallery.description.p2')}</p>
+          <p>{t('gallery.description.p3')}</p>
+          <p>{t('gallery.description.p4')}</p>
+          <p className="font-medium text-foreground">{t('gallery.description.p5')}</p>
+        </motion.div>
+
       </div>
 
       {/* Booking iframe - full width */}

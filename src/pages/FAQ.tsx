@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import heroImage from "@/assets/hero-nice-port-v2.jpg";
 
-const faqKeys = ['checkin', 'linen', 'pets', 'smoking', 'parking', 'transport'] as const;
+const faqKeys = ['checkin', 'linen', 'pets', 'smoking', 'parking', 'transport', 'cancellation'] as const;
 
 const FAQ = () => {
   const { t } = useLanguage();

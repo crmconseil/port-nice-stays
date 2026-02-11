@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Mail, Globe } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -7,7 +7,17 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const { language, setLanguage, t } = useLanguage();
+
+  const handleBookClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname === '/') {
+      document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/#booking');
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -60,10 +70,10 @@ const Header = () => {
           </Button>
           <Button
             size="sm"
-            asChild
-            className="bg-gradient-gold text-gold-foreground hover:opacity-90 transition-opacity"
+            className="bg-gradient-gold text-gold-foreground hover:opacity-90 transition-opacity cursor-pointer"
+            onClick={handleBookClick}
           >
-            <Link to="/reserver">{t('nav.book')}</Link>
+            {t('nav.book')}
           </Button>
         </div>
       </div>

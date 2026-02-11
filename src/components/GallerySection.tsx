@@ -188,13 +188,44 @@ const GallerySection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mt-8 space-y-4 text-muted-foreground text-sm md:text-base leading-relaxed max-w-3xl mx-auto text-center"
+          className="mt-8 space-y-4 text-muted-foreground text-sm md:text-base leading-relaxed"
         >
           <p>{t('gallery.description.p1')}</p>
           <p>{t('gallery.description.p2')}</p>
           <p>{t('gallery.description.p3')}</p>
           <p>{t('gallery.description.p4')}</p>
-          <p className="font-medium text-foreground">{t('gallery.description.p5')}</p>
+          <p className="font-bold text-foreground">{t('gallery.description.p5')}</p>
+        </motion.div>
+
+        {/* Detailed description */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mt-8 space-y-4 text-muted-foreground text-sm md:text-base leading-relaxed"
+        >
+          <p className="font-semibold text-foreground">{t('gallery.detailed.intro')}</p>
+          <p className="whitespace-pre-line">{t('gallery.detailed.upstairs')}</p>
+          <p className="whitespace-pre-line">{t('gallery.detailed.downstairs')}</p>
+          
+          <div>
+            <p className="font-semibold text-foreground mb-2">{t('gallery.detailed.beds_title')}</p>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li>{t('gallery.detailed.bed1')}</li>
+              <li>{t('gallery.detailed.bed2')}</li>
+              <li>{t('gallery.detailed.bed3')}</li>
+            </ul>
+          </div>
+
+          <p>{t('gallery.detailed.kitchen')}</p>
+          <p>{t('gallery.detailed.dining')}</p>
+          <p>{t('gallery.detailed.courtyard')}</p>
+          <p>{t('gallery.detailed.amenities')}</p>
+          <p>{t('gallery.detailed.parking')}</p>
+          <p>{t('gallery.detailed.linen')}</p>
+          <p className="whitespace-pre-line">{t('gallery.detailed.checkin')}</p>
+          <p className="font-medium text-foreground">{t('gallery.detailed.deposit')}</p>
         </motion.div>
 
       </div>

@@ -1,14 +1,17 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import HeroSection from "@/components/HeroSection";
 import AmenitiesSection from "@/components/AmenitiesSection";
 import GallerySection from "@/components/GallerySection";
 import NeighborhoodSection from "@/components/NeighborhoodSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Index = () => {
   const location = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     if (location.hash === '#booking') {
@@ -20,6 +23,10 @@ const Index = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{`Nice Port Duplex — ${t('hero.description')}`}</title>
+        <meta name="description" content={t('gallery.description.p1')} />
+      </Helmet>
       <Header />
       <main className="min-h-screen bg-background">
         <HeroSection />

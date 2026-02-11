@@ -12,41 +12,41 @@ const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-foreground text-primary-foreground py-12">
+    <footer className="bg-foreground text-primary-foreground py-8 md:py-12">
       <div className="container-narrow px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
           <div>
-            <h3 className="font-serif text-2xl mb-4">Nice Port Duplex</h3>
+            <h3 className="font-serif text-xl md:text-2xl mb-3 md:mb-4">Nice Port Duplex</h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               {t('hero.description')}
             </p>
           </div>
           
           <div>
-            <h4 className="font-medium mb-4">{t('footer.contact')}</h4>
-            <div className="space-y-3 text-sm">
+            <h4 className="font-medium mb-3 md:mb-4">{t('footer.contact')}</h4>
+            <address className="not-italic space-y-2 md:space-y-3 text-sm">
               <div className="flex items-center gap-2 text-primary-foreground/70">
-                <MapPin className="w-4 h-4" />
+                <MapPin className="w-4 h-4 flex-shrink-0" />
                 <span>20 Quai Lunel, 06300 Nice</span>
               </div>
               <div className="flex items-center gap-2 text-primary-foreground/70">
-                <Mail className="w-4 h-4" />
-                <a href="mailto:niceportduplex@gmail.com" className="hover:text-primary-foreground transition-colors">
+                <Mail className="w-4 h-4 flex-shrink-0" />
+                <a href="mailto:niceportduplex@gmail.com" className="hover:text-primary-foreground transition-colors break-all">
                   niceportduplex@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2 text-primary-foreground/70">
-                <WhatsAppIcon className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4 flex-shrink-0" />
                 <a href="https://wa.me/33622953137" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
                   +33 6 22 95 31 37
                 </a>
               </div>
-            </div>
+            </address>
           </div>
           
           <div>
-            <h4 className="font-medium mb-4">{t('nav.home')}</h4>
-            <div className="space-y-2 text-sm">
+            <h4 className="font-medium mb-3 md:mb-4">{t('nav.home')}</h4>
+            <nav className="space-y-2 text-sm" aria-label="Footer navigation">
               <Link to="/" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 {t('nav.home')}
               </Link>
@@ -56,11 +56,11 @@ const Footer = () => {
               <a href="/#location" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 {t('nav.location')}
               </a>
-            </div>
+            </nav>
           </div>
         </div>
         
-        <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/50">
+        <div className="border-t border-primary-foreground/20 pt-6 md:pt-8 text-center text-xs md:text-sm text-primary-foreground/50">
           <p>© {new Date().getFullYear()} Nice Port Duplex. {t('footer.rights')}</p>
         </div>
       </div>

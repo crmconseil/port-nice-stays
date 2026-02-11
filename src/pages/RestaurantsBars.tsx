@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NeighborhoodCrossLinks from "@/components/NeighborhoodCrossLinks";
+import HreflangTags from "@/components/HreflangTags";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ExternalLink, Utensils, Wine } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -74,6 +75,7 @@ const RestaurantsBars = () => {
         <title>{`${t('pages.restaurants.title')} — Nice Port Duplex`}</title>
         <meta name="description" content={t('pages.restaurants.intro')} />
       </Helmet>
+      <HreflangTags path="/restaurants-bars" />
       <Header />
 
       {/* Hero banner */}

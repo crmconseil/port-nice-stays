@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NeighborhoodCrossLinks from "@/components/NeighborhoodCrossLinks";
 import HeroSlideshow from "@/components/HeroSlideshow";
+import HreflangTags from "@/components/HreflangTags";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Sun, Bike, Camera, Waves } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -28,6 +29,7 @@ const PromenadeDesAnglais = () => {
         <title>{`${t('pages.promenade.title')} — Nice Port Duplex`}</title>
         <meta name="description" content={t('pages.promenade.p1')} />
       </Helmet>
+      <HreflangTags path="/promenade-des-anglais" />
       <Header />
       <HeroSlideshow images={heroImages} title={t('pages.promenade.title')} subtitle={t('pages.promenade.distance')} />
 

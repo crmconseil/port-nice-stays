@@ -27,7 +27,7 @@ const NeighborhoodCrossLinks = ({ currentPage }: Props) => {
         <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-8 text-center">
           {t('pages.also_discover')}
         </h2>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {otherPlaces.map((place) => (
             <Link
               key={place.key}

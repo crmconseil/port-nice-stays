@@ -89,7 +89,7 @@ const RestaurantsBars = () => {
             {t('pages.back')}
           </Link>
 
-          <p className="text-muted-foreground text-lg mb-12 max-w-2xl">
+          <p className="text-muted-foreground text-lg mb-12">
             {t('pages.restaurants.intro')}
           </p>
 

@@ -54,33 +54,6 @@ const Booking = () => {
           </div>
         </section>
 
-        {/* Other properties */}
-        <section className="section-padding bg-muted">
-          <div className="container-narrow">
-            <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-8 text-center">
-              {t('booking.other_properties')}
-            </h2>
-            <Link
-              to="/reserver-monaco"
-              className="group relative block h-64 md:h-80 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
-            >
-              <img
-                src={monacoImage}
-                alt="Monaco"
-                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
-              <div className="relative h-full flex flex-col justify-end p-8 text-white">
-                <p className="text-xs uppercase tracking-widest opacity-80 mb-1">Monaco • Monte-Carlo</p>
-                <div className="flex items-center gap-2">
-                  <h3 className="text-2xl font-serif">{t('booking.monaco_title')}</h3>
-                  <ArrowRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                </div>
-              </div>
-            </Link>
-          </div>
-        </section>
-
         <Footer />
       </main>
     </>

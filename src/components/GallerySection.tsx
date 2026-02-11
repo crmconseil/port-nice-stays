@@ -187,6 +187,7 @@ const GallerySection = () => {
       {/* Booking iframe - full width */}
       <div id="booking" className="w-full mt-10">
         <iframe
+          key={iframeLang}
           src={`https://app.superhote.com/#/rental/propertyKeyCKNhN3wsLfZ8GxC3w8tGqDk2U?startDate=&endDate=&adultsNumber=1&childrenNumber=0&lang=${iframeLang}`}
           className="w-full border-0"
           style={{ height: '5800px', overflow: 'hidden' }}

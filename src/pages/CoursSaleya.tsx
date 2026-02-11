@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NeighborhoodCrossLinks from "@/components/NeighborhoodCrossLinks";
 import HeroSlideshow from "@/components/HeroSlideshow";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Flower2, Coffee, ShoppingBasket, Music } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -23,6 +24,10 @@ const CoursSaleya = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{`${t('pages.saleya.title')} — Nice Port Duplex`}</title>
+        <meta name="description" content={t('pages.saleya.p1')} />
+      </Helmet>
       <Header />
       <HeroSlideshow images={heroImages} title={t('pages.saleya.title')} subtitle={t('pages.saleya.distance')} />
 

@@ -4,15 +4,17 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import promenadeImg from "@/assets/promenade-seafront.jpg";
 import saleyaImg from "@/assets/saleya-fleurs.jpg";
 import vieuxNiceImg from "@/assets/vieuxnice-ruelle.jpg";
+import restaurantsImg from "@/assets/resto-lunel.jpg";
 
 const allPlaces = [
   { key: "promenade", path: "/promenade-des-anglais", img: promenadeImg, titleKey: "pages.promenade.title", distanceKey: "pages.promenade.distance" },
   { key: "saleya", path: "/cours-saleya", img: saleyaImg, titleKey: "pages.saleya.title", distanceKey: "pages.saleya.distance" },
   { key: "vieuxnice", path: "/vieux-nice", img: vieuxNiceImg, titleKey: "pages.vieuxnice.title", distanceKey: "pages.vieuxnice.distance" },
+  { key: "restaurants", path: "/restaurants-bars", img: restaurantsImg, titleKey: "neighborhood.restaurants.title", distanceKey: "neighborhood.restaurants.distance" },
 ];
 
 interface Props {
-  currentPage: "promenade" | "saleya" | "vieuxnice";
+  currentPage: "promenade" | "saleya" | "vieuxnice" | "restaurants";
 }
 
 const NeighborhoodCrossLinks = ({ currentPage }: Props) => {

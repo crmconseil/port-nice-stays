@@ -33,6 +33,7 @@ const NeighborhoodSection = () => {
       title: t('neighborhood.restaurants.title'),
       distance: t('neighborhood.restaurants.distance'),
       description: t('neighborhood.restaurants.desc'),
+      link: "/restaurants-bars",
     },
   ];
 

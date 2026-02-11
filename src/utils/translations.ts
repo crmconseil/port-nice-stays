@@ -152,6 +152,13 @@ export const translations = {
           icecream: { title: "Glaciers", desc: "Les meilleurs glaciers artisanaux de la Côte d'Azur" },
         },
       },
+      restaurants: {
+        title: "Restaurants & Bars",
+        subtitle: "Nos adresses préférées à Nice",
+        intro: "Découvrez notre sélection de restaurants et bars à proximité de l'appartement. Des adresses authentiques testées et approuvées, pour savourer le meilleur de la gastronomie niçoise et profiter de soirées animées.",
+        restaurants_title: "Restaurants",
+        bars_title: "Bars",
+      },
       also_discover: "À découvrir aussi",
     },
     footer: {
@@ -316,6 +323,13 @@ export const translations = {
           crafts: { title: "Crafts", desc: "Shops with soaps, olive oils, and local artisans" },
           icecream: { title: "Ice Cream", desc: "The best artisan ice cream on the French Riviera" },
         },
+      },
+      restaurants: {
+        title: "Restaurants & Bars",
+        subtitle: "Our favorite spots in Nice",
+        intro: "Discover our selection of restaurants and bars near the apartment. Authentic addresses, tested and approved, to enjoy the best of Niçoise gastronomy and lively evenings.",
+        restaurants_title: "Restaurants",
+        bars_title: "Bars",
       },
       also_discover: "Also Discover",
     },

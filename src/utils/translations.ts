@@ -172,6 +172,37 @@ export const translations = {
       decline: "Refuser",
       learn_more: "En savoir plus",
     },
+    faq: {
+      title: "Questions fréquentes",
+      subtitle: "Tout ce qu'il faut savoir pour votre séjour",
+      meta_description: "Questions fréquentes sur l'appartement Nice Port Duplex : horaires, équipements, parking, transports.",
+      questions: {
+        checkin: {
+          q: "Quelle est l'heure d'arrivée et de départ ?",
+          a: "Le check-in (arrivée dans l'appartement) est possible à partir de 16h et le checkout (départ de l'appartement) doit être fait au plus tard à 11h. Nous pouvons néanmoins nous arranger si besoin de changer les horaires du check-in/checkout.\n\nNous fonctionnons par check-in autonome donc arrivées tardives ou départs aux aurores sont tout à fait possibles à votre rythme. Vous n'avez qu'à récupérer ou déposer la clé dans la boîte à clé avec le code temporaire qui vous sera fourni.\n\nNous ne fournissons qu'un seul jeu de clés mais la boîte à clé peut servir d'espace de stockage pour les larges groupes, si vous voulez visiter séparément.",
+        },
+        linen: {
+          q: "Les draps et serviettes de bain sont-ils fournis ?",
+          a: "Oui, tout le linge de maison : draps, serviettes sont systématiquement fournis pour le nombre de voyageurs de la réservation.\n\nLes produits d'hygiène : savon, gel douche, shampoing, coton, ainsi qu'un sèche-cheveux sont également à votre disposition.",
+        },
+        pets: {
+          q: "Les animaux sont-ils autorisés ?",
+          a: "Nous aimons beaucoup les animaux mais ils sont malheureusement interdits dans l'appartement pour des raisons d'hygiène.",
+        },
+        smoking: {
+          q: "Est-il possible de fumer dans l'appartement ?",
+          a: "Il est strictement interdit de fumer dans l'appartement et dans les parties communes. Ce point est une règle absolue de notre location.",
+        },
+        parking: {
+          q: "Y a-t-il un parking ?",
+          a: "Notre immeuble historique classé de plus de 300 ans ne prévoyait pas le parking à l'époque. Mais pas de soucis, un parking de la ville (payant) sécurisé est situé juste en face de notre immeuble. Vous n'avez qu'à traverser la rue.",
+        },
+        transport: {
+          q: "Comment accède-t-on à l'appartement depuis les transports ?",
+          a: "Notre immeuble est situé sur le port de plaisance de Nice. Le port est accessible par tram, bus, voiture et bateau.\n\n• Depuis l'aéroport de Nice : Tram ligne 2 direct jusqu'à son terminus « Port Lympia »\n\n• Depuis la gare centrale de Nice Ville : Tram ligne 1 jusqu'à la fameuse place Garibaldi, puis marcher 5 min en direction du port.\n\n• En bus depuis Monaco et Menton, ligne 600 vous dépose sur le port.\n\n• En bateau, des navettes depuis Monaco, Cannes, Saint-Tropez vous déposent sur l'embarcadère juste devant notre immeuble. C'est également d'ici que partent les ferries pour la Corse si vous voulez prolonger votre séjour en France avec un petit tour sur l'Île de Beauté.",
+        },
+      },
+    },
     legal: {
       title: "Mentions légales",
       editor_title: "Éditeur du site",
@@ -372,6 +403,37 @@ export const translations = {
       accept: "Accept",
       decline: "Decline",
       learn_more: "Learn more",
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      subtitle: "Everything you need to know for your stay",
+      meta_description: "Frequently asked questions about the Nice Port Duplex apartment: schedules, amenities, parking, transport.",
+      questions: {
+        checkin: {
+          q: "What are the check-in and check-out times?",
+          a: "Check-in (arrival at the apartment) is possible from 4 PM and check-out (departure) must be done by 11 AM at the latest. We can however arrange different times if needed.\n\nWe operate with self check-in, so late arrivals or early morning departures are entirely possible at your own pace. You simply pick up or drop off the key in the key box using the temporary code provided to you.\n\nWe only provide one set of keys, but the key box can serve as storage for larger groups if you want to visit separately.",
+        },
+        linen: {
+          q: "Are bed linen and bath towels provided?",
+          a: "Yes, all household linen: sheets and towels are systematically provided for the number of travelers in the reservation.\n\nToiletries: soap, shower gel, shampoo, cotton pads, as well as a hair dryer are also at your disposal.",
+        },
+        pets: {
+          q: "Are pets allowed?",
+          a: "We love animals very much but they are unfortunately not allowed in the apartment for hygiene reasons.",
+        },
+        smoking: {
+          q: "Is it possible to smoke in the apartment?",
+          a: "Smoking is strictly prohibited in the apartment and in common areas. This is an absolute rule of our rental.",
+        },
+        parking: {
+          q: "Is there parking available?",
+          a: "Our listed historic building, over 300 years old, didn't provide for parking back then. But no worries, a secure city parking lot (paid) is located right across from our building. You just need to cross the street.",
+        },
+        transport: {
+          q: "How do you get to the apartment by public transport?",
+          a: "Our building is located on the Nice marina. The port is accessible by tram, bus, car, and boat.\n\n• From Nice Airport: Direct tram line 2 to its terminus 'Port Lympia'\n\n• From Nice Ville central station: Tram line 1 to the famous Place Garibaldi, then walk 5 minutes towards the port.\n\n• By bus from Monaco and Menton, line 600 drops you off at the port.\n\n• By boat, shuttles from Monaco, Cannes, Saint-Tropez drop you off at the pier right in front of our building. This is also where ferries to Corsica depart if you want to extend your stay in France with a trip to the Island of Beauty.",
+        },
+      },
     },
     legal: {
       title: "Legal Notice",
@@ -574,6 +636,37 @@ export const translations = {
       decline: "Rifiuta",
       learn_more: "Scopri di più",
     },
+    faq: {
+      title: "Domande frequenti",
+      subtitle: "Tutto ciò che devi sapere per il tuo soggiorno",
+      meta_description: "Domande frequenti sull'appartamento Nice Port Duplex: orari, servizi, parcheggio, trasporti.",
+      questions: {
+        checkin: {
+          q: "Qual è l'orario di arrivo e di partenza?",
+          a: "Il check-in (arrivo nell'appartamento) è possibile dalle 16:00 e il check-out (partenza) deve essere effettuato entro le 11:00. Possiamo comunque organizzarci se necessario per modificare gli orari.\n\nFunzioniamo con check-in autonomo, quindi arrivi tardivi o partenze all'alba sono perfettamente possibili al vostro ritmo. Basta ritirare o depositare la chiave nella cassetta chiavi con il codice temporaneo che vi verrà fornito.\n\nForniamo un solo set di chiavi, ma la cassetta chiavi può fungere da deposito per i gruppi numerosi, se volete visitare separatamente.",
+        },
+        linen: {
+          q: "Le lenzuola e gli asciugamani sono forniti?",
+          a: "Sì, tutta la biancheria: lenzuola e asciugamani sono sistematicamente forniti per il numero di viaggiatori della prenotazione.\n\nI prodotti per l'igiene: sapone, gel doccia, shampoo, cotone, nonché un asciugacapelli sono anch'essi a vostra disposizione.",
+        },
+        pets: {
+          q: "Gli animali sono ammessi?",
+          a: "Amiamo molto gli animali ma purtroppo sono vietati nell'appartamento per motivi igienici.",
+        },
+        smoking: {
+          q: "È possibile fumare nell'appartamento?",
+          a: "È severamente vietato fumare nell'appartamento e nelle parti comuni. Questo punto è una regola assoluta del nostro affitto.",
+        },
+        parking: {
+          q: "C'è un parcheggio?",
+          a: "Il nostro edificio storico classificato di oltre 300 anni non prevedeva il parcheggio all'epoca. Ma nessun problema, un parcheggio comunale (a pagamento) sicuro si trova proprio di fronte al nostro edificio. Basta attraversare la strada.",
+        },
+        transport: {
+          q: "Come si arriva all'appartamento con i trasporti?",
+          a: "Il nostro edificio si trova sul porto turistico di Nizza. Il porto è raggiungibile in tram, autobus, auto e barca.\n\n• Dall'aeroporto di Nizza: Tram linea 2 diretto fino al capolinea 'Port Lympia'\n\n• Dalla stazione centrale di Nice Ville: Tram linea 1 fino alla famosa Place Garibaldi, poi camminare 5 minuti verso il porto.\n\n• In autobus da Monaco e Mentone, la linea 600 vi lascia al porto.\n\n• In barca, le navette da Monaco, Cannes, Saint-Tropez vi lasciano all'imbarcadero proprio davanti al nostro edificio. Da qui partono anche i traghetti per la Corsica se volete prolungare il vostro soggiorno in Francia con un giro sull'Isola della Bellezza.",
+        },
+      },
+    },
     legal: {
       title: "Note legali",
       editor_title: "Editore del sito",
@@ -775,6 +868,37 @@ export const translations = {
       decline: "Rechazar",
       learn_more: "Más información",
     },
+    faq: {
+      title: "Preguntas frecuentes",
+      subtitle: "Todo lo que necesita saber para su estancia",
+      meta_description: "Preguntas frecuentes sobre el apartamento Nice Port Duplex: horarios, equipamiento, parking, transporte.",
+      questions: {
+        checkin: {
+          q: "¿Cuál es la hora de llegada y de salida?",
+          a: "El check-in (llegada al apartamento) es posible a partir de las 16h y el check-out (salida) debe hacerse antes de las 11h como máximo. Sin embargo, podemos organizarnos si necesita cambiar los horarios.\n\nFuncionamos con check-in autónomo, por lo que las llegadas tardías o las salidas al amanecer son perfectamente posibles a su ritmo. Solo tiene que recoger o dejar la llave en la caja de llaves con el código temporal que se le proporcionará.\n\nSolo proporcionamos un juego de llaves, pero la caja de llaves puede servir como almacenamiento para grupos grandes, si desean visitar por separado.",
+        },
+        linen: {
+          q: "¿Se proporcionan sábanas y toallas de baño?",
+          a: "Sí, toda la ropa de casa: sábanas y toallas se proporcionan sistemáticamente para el número de viajeros de la reserva.\n\nLos productos de higiene: jabón, gel de ducha, champú, algodón, así como un secador de pelo también están a su disposición.",
+        },
+        pets: {
+          q: "¿Se permiten animales?",
+          a: "Nos encantan los animales, pero desafortunadamente están prohibidos en el apartamento por razones de higiene.",
+        },
+        smoking: {
+          q: "¿Es posible fumar en el apartamento?",
+          a: "Está estrictamente prohibido fumar en el apartamento y en las zonas comunes. Este punto es una regla absoluta de nuestro alquiler.",
+        },
+        parking: {
+          q: "¿Hay parking disponible?",
+          a: "Nuestro edificio histórico clasificado de más de 300 años no preveía el aparcamiento en su época. Pero no se preocupe, un parking municipal (de pago) seguro está situado justo enfrente de nuestro edificio. Solo tiene que cruzar la calle.",
+        },
+        transport: {
+          q: "¿Cómo se llega al apartamento en transporte público?",
+          a: "Nuestro edificio está situado en el puerto deportivo de Niza. El puerto es accesible en tranvía, autobús, coche y barco.\n\n• Desde el aeropuerto de Niza: Tranvía línea 2 directo hasta su terminal 'Port Lympia'\n\n• Desde la estación central de Nice Ville: Tranvía línea 1 hasta la famosa Place Garibaldi, luego caminar 5 minutos hacia el puerto.\n\n• En autobús desde Mónaco y Mentón, la línea 600 le deja en el puerto.\n\n• En barco, las lanzaderas desde Mónaco, Cannes, Saint-Tropez le dejan en el embarcadero justo delante de nuestro edificio. También es desde aquí donde salen los ferries a Córcega si desea prolongar su estancia en Francia con un paseo por la Isla de la Belleza.",
+        },
+      },
+    },
     legal: {
       title: "Aviso legal",
       editor_title: "Editor del sitio",
@@ -975,6 +1099,37 @@ export const translations = {
       accept: "Aceitar",
       decline: "Recusar",
       learn_more: "Saber mais",
+    },
+    faq: {
+      title: "Perguntas frequentes",
+      subtitle: "Tudo o que precisa de saber para a sua estadia",
+      meta_description: "Perguntas frequentes sobre o apartamento Nice Port Duplex: horários, comodidades, estacionamento, transportes.",
+      questions: {
+        checkin: {
+          q: "Qual é o horário de chegada e de partida?",
+          a: "O check-in (chegada ao apartamento) é possível a partir das 16h e o check-out (partida) deve ser feito até às 11h no máximo. Podemos no entanto combinar se for necessário alterar os horários.\n\nFuncionamos com check-in autónomo, portanto chegadas tardias ou partidas de madrugada são perfeitamente possíveis ao seu ritmo. Basta recolher ou depositar a chave na caixa de chaves com o código temporário que lhe será fornecido.\n\nFornecemos apenas um jogo de chaves, mas a caixa de chaves pode servir de armazenamento para grupos grandes, se quiserem visitar separadamente.",
+        },
+        linen: {
+          q: "Os lençóis e toalhas de banho são fornecidos?",
+          a: "Sim, toda a roupa de casa: lençóis e toalhas são sistematicamente fornecidos para o número de viajantes da reserva.\n\nOs produtos de higiene: sabonete, gel de duche, champô, algodão, bem como um secador de cabelo estão também à sua disposição.",
+        },
+        pets: {
+          q: "Os animais são permitidos?",
+          a: "Adoramos animais, mas infelizmente são proibidos no apartamento por razões de higiene.",
+        },
+        smoking: {
+          q: "É possível fumar no apartamento?",
+          a: "É estritamente proibido fumar no apartamento e nas áreas comuns. Este ponto é uma regra absoluta do nosso alojamento.",
+        },
+        parking: {
+          q: "Há estacionamento disponível?",
+          a: "O nosso edifício histórico classificado com mais de 300 anos não previa estacionamento na época. Mas sem problemas, um parque de estacionamento municipal (pago) seguro situa-se mesmo em frente ao nosso edifício. Basta atravessar a rua.",
+        },
+        transport: {
+          q: "Como se chega ao apartamento por transportes públicos?",
+          a: "O nosso edifício situa-se na marina de Nice. O porto é acessível por elétrico, autocarro, carro e barco.\n\n• Desde o aeroporto de Nice: Elétrico linha 2 direto até ao seu terminal 'Port Lympia'\n\n• Desde a estação central de Nice Ville: Elétrico linha 1 até à famosa Place Garibaldi, depois caminhar 5 minutos em direção ao porto.\n\n• De autocarro desde Mónaco e Menton, a linha 600 deixa-o no porto.\n\n• De barco, as lanchas desde Mónaco, Cannes, Saint-Tropez deixam-no no cais mesmo em frente ao nosso edifício. É também daqui que partem os ferries para a Córsega se quiser prolongar a sua estadia em França com um passeio pela Ilha da Beleza.",
+        },
+      },
     },
     legal: {
       title: "Avisos legais",

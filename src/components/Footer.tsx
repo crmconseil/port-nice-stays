@@ -53,9 +53,9 @@ const Footer = () => {
               <Link to="/#booking" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 {t('nav.book')}
               </Link>
-              <a href="/#location" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                {t('nav.location')}
-              </a>
+              <Link to="/faq" className="block text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                FAQ
+              </Link>
             </nav>
           </div>
         </div>

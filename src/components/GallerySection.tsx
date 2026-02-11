@@ -205,9 +205,9 @@ const GallerySection = () => {
           viewport={{ once: true }}
           className="mt-8 space-y-4 text-muted-foreground text-sm md:text-base leading-relaxed"
         >
-          <p className="font-semibold text-foreground">{t('gallery.detailed.intro')}</p>
-          <p className="whitespace-pre-line">{t('gallery.detailed.upstairs')}</p>
-          <p className="whitespace-pre-line">{t('gallery.detailed.downstairs')}</p>
+          <p>{t('gallery.detailed.intro')}</p>
+          <p className="whitespace-pre-line"><span className="font-bold text-foreground">{t('gallery.detailed.upstairs_bold')}</span> {t('gallery.detailed.upstairs_rest')}</p>
+          <p className="whitespace-pre-line"><span className="font-bold text-foreground">{t('gallery.detailed.downstairs_bold')}</span> {t('gallery.detailed.downstairs_rest')}</p>
           
           <div>
             <p className="font-semibold text-foreground mb-2">{t('gallery.detailed.beds_title')}</p>
@@ -224,8 +224,8 @@ const GallerySection = () => {
           <p>{t('gallery.detailed.amenities')}</p>
           <p>{t('gallery.detailed.parking')}</p>
           <p>{t('gallery.detailed.linen')}</p>
-          <p className="whitespace-pre-line">{t('gallery.detailed.checkin')}</p>
-          <p className="font-medium text-foreground">{t('gallery.detailed.deposit')}</p>
+          <p className="whitespace-pre-line"><span className="font-bold text-foreground">{t('gallery.detailed.checkin_bold')}</span> {t('gallery.detailed.checkin_rest')}</p>
+          <p><span className="font-bold text-foreground">{t('gallery.detailed.deposit_bold')}</span> {t('gallery.detailed.deposit_rest')}</p>
         </motion.div>
 
       </div>

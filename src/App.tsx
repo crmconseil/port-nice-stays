@@ -12,6 +12,7 @@ import PromenadeDesAnglais from "./pages/PromenadeDesAnglais";
 import CoursSaleya from "./pages/CoursSaleya";
 import VieuxNice from "./pages/VieuxNice";
 import RestaurantsBars from "./pages/RestaurantsBars";
+import MentionsLegales from "./pages/MentionsLegales";
 import { LanguageProvider } from "./contexts/LanguageContext";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/cours-saleya" element={<CoursSaleya />} />
           <Route path="/vieux-nice" element={<VieuxNice />} />
           <Route path="/restaurants-bars" element={<RestaurantsBars />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

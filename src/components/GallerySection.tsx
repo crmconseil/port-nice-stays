@@ -144,8 +144,8 @@ const MiniSlideshow = ({ images, title }: { images: { src: string; alt: string }
 };
 
 const GallerySection = () => {
-  const { t } = useLanguage();
-
+  const { language, t } = useLanguage();
+  const iframeLang = language === 'pt' ? 'pt' : language === 'es' ? 'es' : language === 'it' ? 'it' : language === 'en' ? 'en' : 'fr';
   const stats = [
     { icon: Ruler, label: "54 m²", description: t('gallery.stats.surface') },
     { icon: BedDouble, label: t('gallery.stats.bedrooms_label'), description: t('gallery.stats.bedrooms') },
@@ -187,7 +187,7 @@ const GallerySection = () => {
       {/* Booking iframe - full width */}
       <div id="booking" className="w-full mt-10">
         <iframe
-          src="https://app.superhote.com/#/rental/propertyKeyCKNhN3wsLfZ8GxC3w8tGqDk2U?startDate=&endDate=&adultsNumber=1&childrenNumber=0&lang=fr"
+          src={`https://app.superhote.com/#/rental/propertyKeyCKNhN3wsLfZ8GxC3w8tGqDk2U?startDate=&endDate=&adultsNumber=1&childrenNumber=0&lang=${iframeLang}`}
           className="w-full border-0"
           style={{ height: '5800px', overflow: 'hidden' }}
           scrolling="no"

@@ -1,11 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Mail, Globe } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { Mail, Globe, ChevronDown } from "lucide-react";
+import { useLanguage, langLabels, langOrder, type Language } from "@/contexts/LanguageContext";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const navigate = useNavigate();
   const { language, setLanguage, t } = useLanguage();
@@ -25,6 +27,16 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <header
       className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
@@ -40,18 +52,36 @@ const Header = () => {
           Nice Port Duplex
         </Link>
         <div className="flex items-center gap-2 md:gap-3">
-          {/* Language Selector */}
-          <button
-            onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
-            className={`flex items-center gap-1 text-xs font-medium px-2 py-1 rounded-full transition-colors ${
-              scrolled
-                ? "text-foreground hover:bg-muted"
-                : "text-primary-foreground hover:bg-primary-foreground/10"
-            }`}
-          >
-            <Globe className="w-3.5 h-3.5" />
-            <span>{language === 'fr' ? 'EN' : 'FR'}</span>
-          </button>
+          {/* Language Selector Dropdown */}
+          <div ref={langRef} className="relative">
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className={`flex items-center gap-1 text-xs font-medium px-2 py-1 rounded-full transition-colors ${
+                scrolled
+                  ? "text-foreground hover:bg-muted"
+                  : "text-primary-foreground hover:bg-primary-foreground/10"
+              }`}
+            >
+              <Globe className="w-3.5 h-3.5" />
+              <span>{langLabels[language]}</span>
+              <ChevronDown className="w-3 h-3" />
+            </button>
+            {langOpen && (
+              <div className="absolute right-0 top-full mt-1 bg-background border border-border rounded-lg shadow-lg py-1 min-w-[80px] z-50">
+                {langOrder.map((lang) => (
+                  <button
+                    key={lang}
+                    onClick={() => { setLanguage(lang); setLangOpen(false); }}
+                    className={`w-full text-left px-3 py-1.5 text-xs font-medium transition-colors hover:bg-muted ${
+                      lang === language ? "text-primary" : "text-foreground"
+                    }`}
+                  >
+                    {langLabels[lang]}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
 
           <Button
             variant="ghost"

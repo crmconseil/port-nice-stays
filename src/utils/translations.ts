@@ -170,7 +170,7 @@ export const translations = {
     legal: {
       title: "Mentions légales",
       editor_title: "Éditeur du site",
-      editor_content: "Nice Port Duplex — 20 Quai Lunel, 06300 Nice, France. Contact : niceportduplex@gmail.com",
+      editor_content: "Nice Port Duplex — SIRET : 837 515 865 00017. Siège social : 888 chemin de la Colle Supérieure, 06500 Menton, France. Directeur de publication : Sabrina Broggini. Contact : niceportduplex@gmail.com",
       hosting_title: "Hébergement",
       hosting_content: "Ce site est hébergé par Lovable (lovable.dev). L'hébergeur assure la continuité du service et la sécurité des données conformément aux réglementations en vigueur.",
       ip_title: "Propriété intellectuelle",
@@ -366,7 +366,7 @@ export const translations = {
     legal: {
       title: "Legal Notice",
       editor_title: "Site Editor",
-      editor_content: "Nice Port Duplex — 20 Quai Lunel, 06300 Nice, France. Contact: niceportduplex@gmail.com",
+      editor_content: "Nice Port Duplex — SIRET: 837 515 865 00017. Registered office: 888 chemin de la Colle Supérieure, 06500 Menton, France. Publication Director: Sabrina Broggini. Contact: niceportduplex@gmail.com",
       hosting_title: "Hosting",
       hosting_content: "This site is hosted by Lovable (lovable.dev). The host ensures service continuity and data security in accordance with applicable regulations.",
       ip_title: "Intellectual Property",
@@ -562,7 +562,7 @@ export const translations = {
     legal: {
       title: "Note legali",
       editor_title: "Editore del sito",
-      editor_content: "Nice Port Duplex — 20 Quai Lunel, 06300 Nizza, Francia. Contatto: niceportduplex@gmail.com",
+      editor_content: "Nice Port Duplex — SIRET: 837 515 865 00017. Sede legale: 888 chemin de la Colle Supérieure, 06500 Mentone, Francia. Direttore della pubblicazione: Sabrina Broggini. Contatto: niceportduplex@gmail.com",
       hosting_title: "Hosting",
       hosting_content: "Questo sito è ospitato da Lovable (lovable.dev). L'host garantisce la continuità del servizio e la sicurezza dei dati in conformità con le normative vigenti.",
       ip_title: "Proprietà intellettuale",
@@ -758,7 +758,7 @@ export const translations = {
     legal: {
       title: "Aviso legal",
       editor_title: "Editor del sitio",
-      editor_content: "Nice Port Duplex — 20 Quai Lunel, 06300 Niza, Francia. Contacto: niceportduplex@gmail.com",
+      editor_content: "Nice Port Duplex — SIRET: 837 515 865 00017. Domicilio social: 888 chemin de la Colle Supérieure, 06500 Mentón, Francia. Director de publicación: Sabrina Broggini. Contacto: niceportduplex@gmail.com",
       hosting_title: "Alojamiento",
       hosting_content: "Este sitio está alojado por Lovable (lovable.dev). El alojador asegura la continuidad del servicio y la seguridad de los datos de acuerdo con las regulaciones vigentes.",
       ip_title: "Propiedad intelectual",
@@ -954,7 +954,7 @@ export const translations = {
     legal: {
       title: "Avisos legais",
       editor_title: "Editor do site",
-      editor_content: "Nice Port Duplex — 20 Quai Lunel, 06300 Nice, França. Contacto: niceportduplex@gmail.com",
+      editor_content: "Nice Port Duplex — SIRET: 837 515 865 00017. Sede social: 888 chemin de la Colle Supérieure, 06500 Menton, França. Diretor de publicação: Sabrina Broggini. Contacto: niceportduplex@gmail.com",
       hosting_title: "Alojamento",
       hosting_content: "Este site é alojado pela Lovable (lovable.dev). O alojador assegura a continuidade do serviço e a segurança dos dados em conformidade com as regulamentações em vigor.",
       ip_title: "Propriedade intelectual",

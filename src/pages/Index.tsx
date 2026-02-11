@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import HreflangTags from "@/components/HreflangTags";
 import HeroSection from "@/components/HeroSection";
 import AmenitiesSection from "@/components/AmenitiesSection";
 import GallerySection from "@/components/GallerySection";
@@ -28,6 +29,7 @@ const Index = () => {
         <title>{`Nice Port Duplex — ${t('hero.description')}`}</title>
         <meta name="description" content={t('gallery.description.p1')} />
       </Helmet>
+      <HreflangTags path="/" />
       <Header />
       <main className="min-h-screen bg-background">
         <HeroSection />

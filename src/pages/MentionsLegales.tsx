@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import HreflangTags from "@/components/HreflangTags";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -12,6 +13,7 @@ const MentionsLegales = () => {
         <title>{`${t('legal.title')} — Nice Port Duplex`}</title>
         <meta name="description" content={t('legal.title')} />
       </Helmet>
+      <HreflangTags path="/mentions-legales" />
       <Header />
       <main className="min-h-screen bg-background pt-24 pb-16">
         <div className="container-narrow px-4">

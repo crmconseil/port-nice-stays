@@ -7,6 +7,7 @@ import GallerySection from "@/components/GallerySection";
 import NeighborhoodSection from "@/components/NeighborhoodSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import CookieConsent from "@/components/CookieConsent";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Index = () => {
@@ -34,6 +35,7 @@ const Index = () => {
         <GallerySection />
         <NeighborhoodSection />
         <Footer />
+        <CookieConsent />
       </main>
     </>
   );

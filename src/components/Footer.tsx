@@ -60,8 +60,11 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-primary-foreground/20 pt-6 md:pt-8 text-center text-xs md:text-sm text-primary-foreground/50">
+        <div className="border-t border-primary-foreground/20 pt-6 md:pt-8 text-center text-xs md:text-sm text-primary-foreground/50 space-y-2">
           <p>© {new Date().getFullYear()} Nice Port Duplex. {t('footer.rights')}</p>
+          <Link to="/mentions-legales" className="hover:text-primary-foreground transition-colors">
+            {t('legal.link')}
+          </Link>
         </div>
       </div>
     </footer>

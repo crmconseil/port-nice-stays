@@ -1,7 +1,17 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { translations } from '@/utils/translations';
 
-type Language = 'fr' | 'en';
+export type Language = 'fr' | 'en' | 'it' | 'es' | 'pt';
+
+const langLabels: Record<Language, string> = {
+  fr: 'FR',
+  en: 'EN',
+  it: 'IT',
+  es: 'ES',
+  pt: 'PT',
+};
+
+const langOrder: Language[] = ['fr', 'en', 'it', 'es', 'pt'];
 
 type LanguageContextType = {
   language: Language;
@@ -11,16 +21,16 @@ type LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [language, setLanguage] = useState<Language>('fr');
+const detectLanguage = (): Language => {
+  const browserLang = navigator.language.split('-')[0].toLowerCase();
+  if (langOrder.includes(browserLang as Language)) {
+    return browserLang as Language;
+  }
+  return 'fr';
+};
 
-  useEffect(() => {
-    // Detect browser language
-    const browserLang = navigator.language.split('-')[0];
-    if (browserLang === 'en') {
-      setLanguage('en');
-    }
-  }, []);
+export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
+  const [language, setLanguage] = useState<Language>(() => detectLanguage());
 
   const t = (key: string) => {
     const keys = key.split('.');
@@ -30,7 +40,7 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
       if (value && value[k]) {
         value = value[k];
       } else {
-        return key; // Fallback to key if translation missing
+        return key;
       }
     }
     
@@ -43,6 +53,8 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
     </LanguageContext.Provider>
   );
 };
+
+export { langLabels, langOrder };
 
 export const useLanguage = () => {
   const context = useContext(LanguageContext);

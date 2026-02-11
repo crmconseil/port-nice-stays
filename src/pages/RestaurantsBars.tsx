@@ -16,6 +16,10 @@ import imgShapko from "@/assets/bar-shapko.jpg";
 import imgWaka from "@/assets/bar-waka.jpg";
 import imgFoliesEdmonde from "@/assets/bar-folies-edmonde.jpg";
 import imgPecheVigne from "@/assets/bar-peche-vigne.jpg";
+import imgNuances from "@/assets/resto-nuances.jpg";
+import imgPapagallo from "@/assets/resto-papagallo.jpg";
+import imgLaTreille from "@/assets/bar-la-treille.jpg";
+import imgCaveDuCours from "@/assets/bar-cave-du-cours.jpg";
 
 const restaurants = [
   { name: "Le Lunel", img: imgLunel, link: "https://share.google/ArAgq4eACiuaMTA2e" },
@@ -25,6 +29,8 @@ const restaurants = [
   { name: "Bocca Nissa", img: imgBoccaNissa, link: "https://share.google/BTGJvQl7kLtgGgphf" },
   { name: "Franchin", img: imgFranchin, link: "https://share.google/qb0NtfFw96RLxV9Nm" },
   { name: "La Réserve", img: imgLaReserve, link: "https://share.google/jz1bmAcADyxIpUboO" },
+  { name: "Nuances", img: imgNuances, link: "https://share.google/ZymcfBX1SYMdRJnZ0" },
+  { name: "Papagallo", img: imgPapagallo, link: "https://share.google/kj8fFcj3Fn6NDoZUe" },
 ];
 
 const bars = [
@@ -32,6 +38,8 @@ const bars = [
   { name: "Waka Bar", img: imgWaka, link: "https://share.google/HpkIdFHS9sDmm38Oe" },
   { name: "Les Folies d'Edmonde", img: imgFoliesEdmonde, link: "https://share.google/5Ggd2oCiD36XfjXjQ" },
   { name: "La Pêche à la Vigne", img: imgPecheVigne, link: "https://share.google/bqglvt20ph8JRB5To" },
+  { name: "La Treille", img: imgLaTreille, link: "https://share.google/bvJSVGKCFNg2FsWCw" },
+  { name: "La Cave Du Cours", img: imgCaveDuCours, link: "https://share.google/dw10wRAbKyLR50ssV" },
 ];
 
 const PlaceCard = ({ name, img, link }: { name: string; img: string; link: string }) => (

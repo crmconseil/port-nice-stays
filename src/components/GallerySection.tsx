@@ -189,7 +189,8 @@ const GallerySection = () => {
         <iframe
           src="https://app.superhote.com/#/rental/propertyKeyCKNhN3wsLfZ8GxC3w8tGqDk2U?startDate=&endDate=&adultsNumber=1&childrenNumber=0&lang=fr"
           className="w-full border-0"
-          style={{ height: '5800px' }}
+          style={{ height: '5800px', overflow: 'hidden' }}
+          scrolling="no"
           title={t('nav.book')}
           allow="payment"
         />

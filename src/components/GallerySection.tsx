@@ -234,10 +234,11 @@ const GallerySection = () => {
       <div id="booking" className="w-full mt-10">
         <iframe
           key={iframeLang}
-          src={`https://app.superhote.com/#/rental/propertyKeyCKNhN3wsLfZ8GxC3w8tGqDk2U?startDate=&endDate=&adultsNumber=1&childrenNumber=0&lang=${iframeLang}`}
+          src="https://connect.superhote.com/integrations/iframes/f3a3e892-4ee5-40de-8ff7-204023110f29/rentals"
           className="w-full border-0"
-          style={{ height: '4400px', overflow: 'hidden' }}
+          style={{ height: '1500px', overflow: 'hidden' }}
           scrolling="no"
+          id="booking-engine-rentals"
           title={t('nav.book')}
           allow="payment"
         />

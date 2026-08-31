@@ -231,12 +231,12 @@ const GallerySection = () => {
       </div>
 
       {/* Booking iframe - full width */}
-      <div id="booking" className="w-full mt-10">
+      <div id="booking" className="w-full mt-10 px-4 sm:px-6 lg:px-8">
         <iframe
           key={iframeLang}
           src="https://connect.superhote.com/integrations/iframes/f3a3e892-4ee5-40de-8ff7-204023110f29/rentals?property_key=propertyKeyUvqrtUT0h6ZKNNumBV0adLkoZ"
           className="w-full border-0"
-          style={{ height: '1500px', overflow: 'hidden' }}
+          style={{ height: '2250px', overflow: 'hidden' }}
           scrolling="no"
           id="booking-rental"
           title={t('nav.book')}

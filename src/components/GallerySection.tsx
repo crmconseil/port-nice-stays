@@ -236,7 +236,7 @@ const GallerySection = () => {
           key={iframeLang}
           src="https://connect.superhote.com/integrations/iframes/f3a3e892-4ee5-40de-8ff7-204023110f29/rentals?property_key=propertyKeyUvqrtUT0h6ZKNNumBV0adLkoZ"
           className="w-full border-0"
-          style={{ height: '5500px', overflow: 'hidden' }}
+          style={{ height: '5300px', overflow: 'hidden' }}
           scrolling="no"
           id="booking-rental"
           title={t('nav.book')}
